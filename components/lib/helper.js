@@ -2,14 +2,13 @@ const baseUrl = "http://localhost:3000";
 
 // Get all the user from the database
 export const getUser = async () =>{
-        const response = await fetch(`${baseUrl}/api/users`)
+    const response = await fetch(`${baseUrl}/api/users`)
     const json = await response.json(); 
     return json;
 }
 
 // Posting new user
 export const addUser = async (formData) => {
-    async function getStaticProps(context){
         try{
             const Options = {
                 method: 'POST',
@@ -25,8 +24,7 @@ export const addUser = async (formData) => {
             return(error)
         }
     }
-    getStaticProps(); 
-}
+    
 
 // Update User
 export async function updateUser (userId, formData) {

@@ -1,0 +1,21 @@
+.home{
+    height: 100vh;
+}
+
+.bannerHome{
+    height: 60vh;
+}
+
+.bannerHomeForMobile{
+    height: 30vh;
+    width: 100vh;
+}
+
+.redLine{
+    width: 150px;
+    height: 7px;
+    background-color: orangered;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
