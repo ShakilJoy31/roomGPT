@@ -1,21 +1,169 @@
-.home{
-    height: 100vh;
+.oneMillion {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 102.5%
+  );
+  filter: drop-shadow(0px 30px 31px rgba(0, 0, 0, 0.3));
+  border-radius: 21px;
+}
+.redesigningButton {
+  background: #0f7fef;
+  box-shadow: 0px 15px 95px rgba(15, 127, 239, 0.45);
+  border-radius: 56px;
+}
+.homeBackground {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(73, 15, 239, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
-.bannerHome{
-    height: 60vh;
+.imageBorder {
+  border: 4px solid rgba(255, 255, 255, 0.83);
+  backdrop-filter: blur(13.5px);
+  padding: 5px;
+}
+.userReview {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid #eaecf0;
+  border-radius: 20px;
+  /* height: 350px; */
+}
+.userReviewWithColor {
+  background: #0f7fef;
+  box-shadow: 25px 52px 83px rgba(15, 127, 239, 0.25);
+  border-radius: 20px;
+  /* height: 450px */
+}
+.uploadImageHead {
+  background: #0f7fef;
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 26px 43px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(13.5px);
+  border-radius: 22px;
+  padding: 20px;
+  color: white;
+  width: 300px;
+}
+.uploadImageNonHead {
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  backdrop-filter: blur(13.5px);
+  padding: 20px;
+  border-radius: 22px;
+  width: 300px;
+}
+.buyCreditCard {
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  backdrop-filter: blur(13.5px);
+  border-radius: 22px;
+  height: 300px;
 }
 
-.bannerHomeForMobile{
-    height: 30vh;
-    width: 100vh;
+.buyCreditCardWithDiffBack {
+  background: #0f7fef;
+  box-shadow: 25px 64px 83px rgba(15, 127, 239, 0.25);
+  border-radius: 0px 0px 30px 30px;
+  height: 300px;
 }
 
-.redLine{
-    width: 150px;
-    height: 7px;
-    background-color: orangered;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
+.whatIncBorder {
+  border-right: 1px solid black;
+}
+
+.mostPopular {
+  background: #354e67;
+  border-radius: 30px 30px 0px 0px;
+  /* border-radius: 30px; */
+  color: white;
+}
+
+.boroCard {
+  background: linear-gradient(
+    95.16deg,
+    #ffffff 0.93%,
+    rgba(255, 255, 255, 0.97) 103.61%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(13.5px);
+  border-radius: 22px;
+  padding: 40px;
+}
+
+.BoroBackground {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(73, 15, 239, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.borderDivider {
+  width: 2px;
+  background-color: #dedede;
+  height: 200px;
+}
+
+.payNowButton {
+  background: #0f7fef;
+  border-radius: 79px;
+}
+
+.payNowButtonMiddle {
+  background: white;
+  border-radius: 79px;
+}
+
+.workingBackground {
+  /* background: radial-gradient(50% 50% at 50% 50%, rgba(15, 127, 239, 0.11) 0%, rgba(255, 255, 255, 0) 100%); */
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(73, 15, 239, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.home {
+  height: 100vh;
+}
+
+.bannerHome {
+  height: 60vh;
+}
+
+.bannerHomeForMobile {
+  height: 30vh;
+  width: 100vh;
+}
+
+.redLine {
+  width: 150px;
+  height: 7px;
+  background-color: orangered;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.tryIt {
+  background: #0f7fef;
+  border-radius: 56px;
+  color:white
+}
+
+.bottomBorder{
+    border-bottom: 1px solid #D0D0D0;
 }

@@ -5,125 +5,34 @@ import { FaShoppingBag } from "react-icons/fa";
 import { FaUserCircle } from "react-icons/fa";
 import { BsPatchQuestionFill } from "react-icons/bs";
 
-const Navbar = () => {
-  const router = useRouter();
-  const handleSignUpButton = () => {
-    const logOutConfirmation = window.confirm("Do you want to log out?");
-    if (logOutConfirmation) {
-      router.push("/signup");
-      localStorage.removeItem("savedUser");
-      localStorage.removeItem("amount");
-    }
-  };
+const Navbar = ({setTheme}) => {
+  // const router = useRouter();
   return (
-    <div className="pb-20">
+    <div className="">
         {/* For Desktop user */}
-      <div
-        style={{
-          backgroundImage: "linear-gradient(45deg,#643843, #B799FF)",
-          backgroundSize: "100%",
-          backgroundRepeat: "repeat",
-          position: "fixed",
-          zIndex: 1,
-        }}
-        className="items-center justify-between hidden px-6 lg:flex navbar"
+      <div className="items-center justify-between px-32 lg:flex navbar"
       >
         <div>
           <img
-            className="h-20 w-28"
-            src="https://i.ibb.co/48HLftG/ULTI-FUNDS-Black.png"
+            className=""
+            src="https://live.staticflickr.com/65535/52967705289_233738a1d8_m.jpg"
             alt=""
           />
-          <p className="mx-8 lg:text-xl">Brands</p>
-          <p className="lg:text-xl">How it works</p>
-          <p className="ml-8 lg:text-xl">Who We Benefit</p>
         </div>
 
         <div>
           <button
-            className={`cursor-pointer btn-sm normal-case text-xl border-0 hover:text-white hover:bg-white rounded-sm `}
+          style={{background: '#0F7FEF',
+            borderRadius: '7px'}}
+            className={`cursor-pointer btn color-white normal-case border-0 rounded-lg`}
           >
-            Sign Up
+            <span style={{color: 'white'}}>Sign Up</span>
           </button>
-          <div className="mx-8">
-            <span className="flex justify-center">
-              <FaShoppingBag size={30}></FaShoppingBag>
-            </span>
-            <span className="flex justify-center">Shop</span>
-          </div>
-          <div>
-            <span className="flex justify-center">
-              <FaUserCircle size={30}></FaUserCircle>
-            </span>
-            <span className="flex justify-center">Sign in</span>
-          </div>
-          <div className="ml-8">
-            <span className="flex justify-center">
-              <BsPatchQuestionFill size={30}></BsPatchQuestionFill>
-            </span>
-            <span className="flex justify-center">Support</span>
-          </div>
         </div>
       </div>
-
-
-
-
-
-
 
       {/* For Mobile Device */}
-      <div
-        style={{
-          backgroundImage: "linear-gradient(45deg,#643843, #B799FF)",
-          backgroundSize: "100%",
-          backgroundRepeat: "repeat",
-          position: "fixed",
-          zIndex: 1,
-        }}
-        className="flex items-center justify-between text-black lg:hidden md:hidden navbar"
-      >
-        <div>
-          <img
-            className="w-24 h-16"
-            src="https://i.ibb.co/48HLftG/ULTI-FUNDS-Black.png"
-            alt=""
-          />
-        </div>
-
-        <div>
-          <button
-            className={`cursor-pointer btn-sm normal-case lg:text-xl md:text-xl border-0 hover:text-white hover:bg-white rounded-sm `}
-          >
-            Sign Up
-          </button>
-          <div className="">
-            <span className="flex justify-center">
-              <FaShoppingBag size={20}></FaShoppingBag>
-            </span>
-            <span className="flex justify-center">Shop</span>
-          </div>
-          <div className='mx-2'>
-            <span className="flex justify-center">
-              <FaUserCircle size={20}></FaUserCircle>
-            </span>
-            <span className="flex justify-center">Sign in</span>
-          </div>
-          <div className="">
-            <span className="flex justify-center">
-              <BsPatchQuestionFill size={20}></BsPatchQuestionFill>
-            </span>
-            <span className="flex justify-center">Support</span>
-          </div>
-        </div>
-      </div>
-      <div className='block lg:hidden md:hidden'>
-      <div className='flex items-center justify-around'>
-      <p className=" lg:text-xl">Brands</p>
-          <p className="lg:text-xl">How it works</p>
-          <p className=" lg:text-xl">Who We Benefit</p>
-      </div>
-      </div>
+      
     </div>
   );
 };
