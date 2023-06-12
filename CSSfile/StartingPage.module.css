@@ -167,3 +167,8 @@
 .bottomBorder{
     border-bottom: 1px solid #D0D0D0;
 }
+
+.mobileWorldwide{
+  background: radial-gradient(50% 50% at 50% 50%, rgba(73, 15, 239, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+
+}

@@ -10,7 +10,7 @@ const Navbar = ({setTheme}) => {
   return (
     <div className="">
         {/* For Desktop user */}
-      <div className="items-center justify-between px-32 lg:flex navbar"
+      <div className="items-center justify-between px-2 lg:px-32 md:px-24 lg:flex navbar"
       >
         <div>
           <img

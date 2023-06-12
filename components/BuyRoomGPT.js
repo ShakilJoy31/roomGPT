@@ -2,8 +2,8 @@ import StartingPage from "../CSSfile/StartingPage.module.css";
 
 const BuyRoomGPT = () => {
   return (
-    <div className="px-32 pb-10">
-      <h1 className="flex justify-center my-24 text-4xl font-bold">
+    <div className="px-2 pb-10 lg:px-32 md:px-24">
+      <h1 className="flex justify-center my-8 text-2xl font-bold lg:my-24 md:my-20 lg:text-4xl md:text-3xl">
         Buy
         <span style={{ color: "#0F7FEF" }} className="mx-3">
           {" "}
@@ -42,7 +42,7 @@ const BuyRoomGPT = () => {
             </div>
           </div>
 
-          <div className="mt-[-45px]">
+          <div className="lg:mt-[-45px] md:mt-[-45px] mt-[-10px]">
             <p
               className={`flex justify-center py-3 ${StartingPage.mostPopular}`}
             >
@@ -108,16 +108,21 @@ const BuyRoomGPT = () => {
 
         {/* Whats included */}
         <div
-          className={`${StartingPage.boroCard} flex justify-between items-center `}
+          className={`${StartingPage.boroCard} lg:flex md:flex justify-between items-center `}
         >
-          <h1 className="text-3xl font-bold ">
+          <h1 className="hidden text-3xl font-bold lg:block md:block ">
             What is <br /> included
           </h1>
 
-          <div className={`${StartingPage.borderDivider}`}></div>
+          <h1 className="block mx-auto text-3xl font-bold lg:hidden md:hidden">
+            What is included
+          </h1>
+
+          <div className={`${StartingPage.borderDivider} hidden lg:block md:block`}></div>
 
           <div>
-            <div className={`flex justify-center`}>
+            <div className={`lg:flex md:flex justify-center`}>
+
               <div>
                 <div className="flex items-center my-6">
                   <img

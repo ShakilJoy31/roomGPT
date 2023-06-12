@@ -4,11 +4,12 @@ import { TbRosetteNumber1 } from "react-icons/tb";
 const HowItWorks = () => {
   return (
     <div className="">
-      <h1 className="flex justify-center my-16 text-4xl font-bold">
+      <h1 className="flex justify-center my-8 text-4xl font-bold lg:my-16 md:my-12">
         How it <span style={{ color: "#0F7FEF", marginLeft:'10px'}}> Works</span>
       </h1>
-      <div className='px-32'>
-        <div className='flex items-center justify-between'>
+      <div className='p-2 lg:px-32 md:px-24'>
+        <div className='grid items-center justify-between lf:flex md:flex'>
+
           <div className={`${StartingPage.workingBackground} w-full`}>
             <ul className="steps steps-vertical">
               <li className="step step-primary">
@@ -50,7 +51,6 @@ const HowItWorks = () => {
             </div>
           </div>
           </div>
-
 
         </div>
 
