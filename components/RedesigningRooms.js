@@ -4,9 +4,9 @@ const RedesigningRooms = () => {
   return (
     <div>
       <div clssName={`w-full hero ${StartingPage.homeBackground}`}>
-        <div className="flex flex-col justify-between w-full lg:pl-32 md:pl-24 lg:flex-row">
+        <div className={`flex flex-col justify-between w-full lg:pl-32 md:pl-24 lg:flex-row ${StartingPage.HomeHoleBackground}`}>
           
-          <div>
+          <div className={`${StartingPage.primaryContent}`}>
             <p className={`${StartingPage.oneMillion} flex justify-center lg:block md:block`}>
               Used by over 1 Million home design enthusiasts
             </p>
@@ -38,17 +38,27 @@ const RedesigningRooms = () => {
             </button>
           </div>
 
-          <div className={`w-96 carousel ${StartingPage.imageBorder}`}>
-            <div className="w-1/2 carousel-item">
+          <div className={`flex justify-center carousel ${StartingPage.imageBorder} px-2`}>
+            <div className=" carousel-item">
               <img
                 src="https://live.staticflickr.com/65535/52966744687_5719297bda_m.jpg"
-                className="w-full"
+                className={`${StartingPage.homeImag} hidden lg:block md:block`}
+              />
+
+              <img
+                src="https://live.staticflickr.com/65535/52966744687_5719297bda_m.jpg"
+                className={` block md:hidden lg:hidden`}
               />
             </div>
-            <div className="w-1/2 carousel-item">
+            <div className=" carousel-item">
               <img
                 src="https://live.staticflickr.com/65535/52967485269_1f74f6e5ef_m.jpg"
-                className="w-full"
+                className={`hidden w-full lg:block md:block ${StartingPage.homeImag}`}
+              />
+
+              <img
+                src="https://i.ibb.co/nbz5ZBf/Rectangle-817-1.png"
+                className={`block w-full lg:hidden md:hidden`}
               />
             </div>
           </div>

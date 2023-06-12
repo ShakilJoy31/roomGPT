@@ -150,7 +150,7 @@ const BuyRoomGPT = () => {
                 </div>
               </div>
 
-              <div className="ml-6">
+              <div className="lg:ml-6 md:ml-4">
                 <div className="flex items-center my-6">
                   <img
                     className="w-4 mr-2"
