@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 // import NavbarCss from '../CSSfile/Navbar.module.css';
-import { useRouter } from "next/router";
-import { FaShoppingBag } from "react-icons/fa";
-import { FaUserCircle } from "react-icons/fa";
-import { BsPatchQuestionFill } from "react-icons/bs";
 
 const Navbar = ({setTheme}) => {
   // const router = useRouter();
@@ -26,7 +22,11 @@ const Navbar = ({setTheme}) => {
             borderRadius: '7px'}}
             className={`cursor-pointer btn color-white normal-case border-0 rounded-lg`}
           >
-            <span style={{color: 'white'}}>Sign Up</span>
+            <span style={{color: 'white', fontFamily: 'Gilroy',
+fontStyle: 'normal',
+fontWeight: '700',
+fontSize: '16px',
+lineHeight: '142%'}}>Log in</span>
           </button>
         </div>
       </div>

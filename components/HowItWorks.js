@@ -4,7 +4,22 @@ import { TbRosetteNumber1 } from "react-icons/tb";
 const HowItWorks = () => {
   return (
     <div className="">
-      <h1 className="flex justify-center my-8 text-4xl font-bold lg:my-16 md:my-12">
+      <h1
+        className={`lg:flex md:flex justify-center my-8 hidden text-4xl font-bold lg:my-16 md:my-12 ${StartingPage.howItWorkscss}`}
+      >
+        How it{" "}
+        <span style={{ color: "#0F7FEF", marginLeft: "10px" }}> Works</span>
+      </h1>
+
+      <h1 style={{
+        fontFamily: 'Gilroy',
+        fontStyle: 'normal',
+        fontWeight: '700',
+        fontSize: '24px',
+        lineHeight: '125%',
+      }}
+        className={`flex justify-center my-6 lg:hidden md:hidden`}
+      >
         How it{" "}
         <span style={{ color: "#0F7FEF", marginLeft: "10px" }}> Works</span>
       </h1>
@@ -12,6 +27,7 @@ const HowItWorks = () => {
         <div className="grid items-center justify-between lf:flex md:flex">
           <div className={`${StartingPage.workingBackground} w-50`}>
             <ul className="steps steps-vertical">
+
               <li className="step step-primary">
                 <div
                   className={`flex items-center ${StartingPage.uploadImageHead}`}
@@ -28,7 +44,10 @@ const HowItWorks = () => {
                   >
                     1
                   </span>
-                  <p style={{ marginLeft: "10px" }}>
+                  <p
+                    
+                    className={`${StartingPage.workingHeading}`}
+                  >
                     Upload an image of a room
                   </p>
                 </div>
@@ -50,9 +69,16 @@ const HowItWorks = () => {
                   >
                     2
                   </span>
-                  <p style={{ marginLeft: "10px" }}>Select the theme(s)</p>
+                  <p
+                    
+                    className={`${StartingPage.workingHeading}`}
+                  >
+                    Select the theme(s)
+                  </p>
                 </div>
               </li>
+
+
               <li className="step">
                 <div
                   className={`flex items-center ${StartingPage.uploadImageNonHead} mt-4`}
@@ -69,11 +95,15 @@ const HowItWorks = () => {
                   >
                     2
                   </span>
-                  <p style={{ marginLeft: "10px" }}>
+                  <p
+                    
+                    className={`${StartingPage.workingHeading}`}
+                  >
                     Get their generated result
                   </p>
                 </div>
               </li>
+
             </ul>
           </div>
 
@@ -92,13 +122,17 @@ const HowItWorks = () => {
 
           {/* For mobile */}
           <button
-              className={`btn normal-case block lg:hidden md:hidden ${StartingPage.instantlyRedesignButtonForMobile2} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
-                <span>Instantly Redesign</span>
-              </span>
-            </button>
+            className={`btn normal-case block lg:hidden md:hidden ${StartingPage.instantlyRedesignButtonForMobile2} border-0`}
+          >
+            <span style={{ color: "black" }} className="flex items-center">
+              <img
+                className="mr-4"
+                src="https://i.ibb.co/SvwQmQx/Vector-2.png"
+                alt=""
+              />
+              <span>Instantly Redesign</span>
+            </span>
+          </button>
 
           {/* Before */}
           <button
@@ -111,12 +145,12 @@ const HowItWorks = () => {
 
           {/* For mobile */}
           <button
-              className={`btn normal-case block lg:hidden md:hidden ${StartingPage.beforeMobile2} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <span>Before</span>
-              </span>
-            </button>
+            className={`btn normal-case block lg:hidden md:hidden ${StartingPage.beforeMobile2} border-0`}
+          >
+            <span style={{ color: "black" }} className="flex items-center">
+              <span>Before</span>
+            </span>
+          </button>
 
           {/* After */}
           <button
@@ -130,43 +164,41 @@ const HowItWorks = () => {
           {/* For mobile */}
 
           <button
-              className={`btn normal-case block lg:hidden md:hidden ${StartingPage.afterMobile2} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <span>After</span>
-              </span>
-            </button>
+            className={`btn normal-case block lg:hidden md:hidden ${StartingPage.afterMobile2} border-0`}
+          >
+            <span style={{ color: "black" }} className="flex items-center">
+              <span>After</span>
+            </span>
+          </button>
 
           <div>
-          <div
-            className={`flex justify-center carousel ${StartingPage.imageBorder} px-2`}
-          >
-            <div className=" carousel-item">
-              <img
-                src="https://live.staticflickr.com/65535/52967869295_379cca8f42_m.jpg"
-                className={`${StartingPage.homeImag} hidden lg:block md:block`}
-              />
+            <div
+              className={`flex justify-center carousel ${StartingPage.imageBorder} px-2`}
+            >
+              <div className=" carousel-item">
+                <img
+                  src="https://live.staticflickr.com/65535/52967869295_379cca8f42_m.jpg"
+                  className={`${StartingPage.homeImag} hidden lg:block md:block`}
+                />
 
-              <img
-                src="https://live.staticflickr.com/65535/52967869295_379cca8f42_m.jpg"
-                className={` block md:hidden lg:hidden`}
-              />
+                <img
+                  src="https://live.staticflickr.com/65535/52967869295_379cca8f42_m.jpg"
+                  className={` block md:hidden lg:hidden`}
+                />
+              </div>
+
+              <div className=" carousel-item">
+                <img
+                  src="https://live.staticflickr.com/65535/52967635404_5a4146f6c2_m.jpg"
+                  className={`hidden w-full lg:block md:block ${StartingPage.homeImag}`}
+                />
+
+                <img
+                  src="https://live.staticflickr.com/65535/52967635404_5a4146f6c2_m.jpg"
+                  className={`block w-full lg:hidden md:hidden`}
+                />
+              </div>
             </div>
-
-            <div className=" carousel-item">
-              <img
-                src="https://live.staticflickr.com/65535/52967635404_5a4146f6c2_m.jpg"
-                className={`hidden w-full lg:block md:block ${StartingPage.homeImag}`}
-              />
-
-              <img
-                src="https://live.staticflickr.com/65535/52967635404_5a4146f6c2_m.jpg"
-                className={`block w-full lg:hidden md:hidden`}
-              />
-            </div>
-          </div>
-
-
 
             {/* <div className={`w-full ${StartingPage.imageBorder} flex justify-center carousel ${StartingPage.imageBorder} px-2`}>
               <div className=" carousel-item">
@@ -183,7 +215,6 @@ const HowItWorks = () => {
               </div>
             </div> */}
           </div>
-
         </div>
       </div>
     </div>

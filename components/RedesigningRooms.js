@@ -14,12 +14,12 @@ const RedesigningRooms = () => {
               Used by over <span style={{color:'#0F7FEF'}}>1 Million</span> home design enthusiasts
             </p>
 
-            <h1 className="hidden my-10 text-5xl font-bold md:text-4xl lg:block md:block">
+            <h1 className={`hidden my-10 text-5xl font-bold md:text-4xl lg:block md:block ${StartingPage.RoomInSec}`}>
               Redesigning <br /> Rooms in Seconds <br />{" "}
               <span style={{ color: "#0F7FEF" }}>Using AI</span>
             </h1>
 
-            <h1 className="block my-4 text-2xl font-bold lg:hidden md:hidden">
+            <h1 className={`block my-4 text-2xl font-bold lg:hidden md:hidden ${StartingPage.HomeForMobile}`}>
               <span className="flex justify-center">Redesigning Rooms in</span>
               <span
                 style={{ color: "#0F7FEF" }}

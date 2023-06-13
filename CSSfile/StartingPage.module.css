@@ -6,6 +6,12 @@
   );
   filter: drop-shadow(0px 30px 31px rgba(0, 0, 0, 0.03));
   border-radius: 21px;
+
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 137.5%;
 }
 
 .instantlyRedesignButton {
@@ -22,6 +28,7 @@
   right: 40%;
   top: 25%;
   z-index: 1;
+
 }
 .instantlyRedesignButton2 {
   background: linear-gradient(
@@ -53,7 +60,7 @@
   z-index: 1;
 }
 
-.instantlyRedesignButtonForMobile{
+.instantlyRedesignButtonForMobile {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -69,7 +76,7 @@
   z-index: 1;
 }
 
-.instantlyRedesignButtonForMobile2{
+.instantlyRedesignButtonForMobile2 {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -85,7 +92,7 @@
   z-index: 1;
 }
 
-.instantlyRedesignButtonForMobile3{
+.instantlyRedesignButtonForMobile3 {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -101,7 +108,7 @@
   z-index: 1;
 }
 
-.before{
+.before {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -116,7 +123,7 @@
   z-index: 1;
 }
 
-.beforeMobile{
+.beforeMobile {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -132,7 +139,7 @@
   z-index: 1;
 }
 
-.beforeMobile2{
+.beforeMobile2 {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -147,7 +154,7 @@
   margin-top: 440px;
   z-index: 1;
 }
-.before2{
+.before2 {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -162,7 +169,7 @@
   margin-top: 200px;
   z-index: 1;
 }
-.after{
+.after {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -177,7 +184,7 @@
   z-index: 1;
 }
 
-.afterMobile{
+.afterMobile {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -192,7 +199,7 @@
   margin-top: 240px;
   z-index: 1;
 }
-.afterMobile2{
+.afterMobile2 {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -207,7 +214,7 @@
   margin-top: 440px;
   z-index: 1;
 }
-.after2{
+.after2 {
   background: linear-gradient(
     90.42deg,
     rgba(255, 255, 255, 0.5) -1%,
@@ -222,7 +229,6 @@
   margin-top: 200px;
   z-index: 1;
 }
-
 
 @media (min-width: 1281px) {
   .instantlyRedesignButton {
@@ -269,8 +275,8 @@
     margin-top: 20px;
     z-index: 1;
   }
-  
-  .before2{
+
+  .before2 {
     background: linear-gradient(
       90.42deg,
       rgba(255, 255, 255, 0.5) -1%,
@@ -285,7 +291,7 @@
     margin-top: 200px;
     z-index: 1;
   }
-  .after2{
+  .after2 {
     background: linear-gradient(
       90.42deg,
       rgba(255, 255, 255, 0.5) -1%,
@@ -355,8 +361,18 @@
   background: rgba(255, 255, 255, 0.9);
   border: 1.5px solid #eaecf0;
   border-radius: 20px;
-  height: 350px;
+  height: 330px;
   transition-duration: 300ms;
+
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
 }
 
 .userReview:hover {
@@ -364,7 +380,9 @@
   box-shadow: 25px 52px 83px rgba(15, 127, 239, 0.25);
   border-radius: 20px;
   transition-duration: 300ms;
-  height: 380px;
+  height: 330px;
+
+  transform: translateY(20px);
 }
 
 .uploadImageHead {
@@ -375,7 +393,7 @@
   border-radius: 22px;
   padding: 20px;
   color: white;
-  width: 300px;
+  width: 340px;
 }
 .uploadImageNonHead {
   background: linear-gradient(
@@ -387,8 +405,57 @@
   backdrop-filter: blur(13.5px);
   padding: 20px;
   border-radius: 22px;
-  width: 300px;
+  width: 340px;
 }
+
+.workingHeading{
+  margin-left: 5px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+line-height: 160%;
+}
+
+
+/* Media query */
+@media (max-width: 768px) {
+
+  .uploadImageHead {
+    background: #0f7fef;
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    box-shadow: 0px 26px 43px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(13.5px);
+    border-radius: 22px;
+    padding: 20px;
+    color: white;
+    width: 330px;
+  }
+  .uploadImageNonHead {
+    background: linear-gradient(
+      90.42deg,
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(255, 255, 255, 0.97) 131.76%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    backdrop-filter: blur(13.5px);
+    padding: 20px;
+    border-radius: 22px;
+    width: 330px;
+  }
+
+
+  .workingHeading{
+    margin-left: 5px;
+    font-family: 'Gilroy-Medium';
+font-size: 16px;
+line-height: 160%;
+  }
+
+  
+}
+
+
 .buyCreditCard {
   background: linear-gradient(
     90.42deg,
@@ -528,12 +595,48 @@
   );
 }
 
-.coolImages{
+.coolImages {
   height: 18rem;
   transition-duration: 300ms;
+  position: relative;
+  transition: transform 0.3s ease;
 }
-.coolImages:hover{
-  height: 22rem;
+.coolImages:hover {
+  height: 18rem;
   transition-duration: 300ms;
   cursor: pointer;
+
+  /* transform: translateY(22rem); */
+  transform: scale(1.1999);
+}
+
+/* For the font of this application */
+
+
+
+
+
+.RoomInSec {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 125%;
+}
+
+.HomeForMobile{
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 125%;
+text-align: center;
+}
+
+.howItWorkscss{
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 125%;
 }
