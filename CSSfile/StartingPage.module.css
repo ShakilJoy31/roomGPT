@@ -505,6 +505,15 @@ line-height: 160%;
   height: 330px;
 }
 
+
+.coolImageHeadingMobile{
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  }
+
 .buyCreditCardWithDiffBack {
   background: #0f7fef;
   box-shadow: 25px 64px 83px rgba(15, 127, 239, 0.25);
@@ -702,4 +711,27 @@ font-style: normal;
 font-weight: 700;
 font-size: 48px;
 line-height: 59px;
+}
+
+.coolImageHeading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 125%;
+}
+
+.transformRoom{
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 125%;
+}
+.ourReview{
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 154.5%;
 }

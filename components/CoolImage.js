@@ -3,12 +3,23 @@ import StartingPage from "../CSSfile/StartingPage.module.css";
 const CoolImage = () => {
   return (
     <div>
-      <p className="flex justify-center mt-8 text-2xl font-bold lg:mt-24 md:mt-20 lg:text-4xl md:text-3xl">
+      <p className={`hidden lg:flex md:flex justify-center mt-8 ${StartingPage.coolImageHeading}`}> 
         Some cool images that
       </p>
       <p
         style={{ color: "#0F7FEF" }}
-        className="flex justify-center mb-8 text-2xl font-bold lg:text-4xl md:text-3xl"
+        className={`hidden lg:flex md:flex justify-center mb-8 ${StartingPage.coolImageHeading}`}
+      >
+        roomGPT generated
+      </p>
+
+
+      <p className={`flex md:hidden lg:hidden justify-center mt-8 ${StartingPage.coolImageHeadingMobile}`}> 
+        Some cool images that
+      </p>
+      <p
+        style={{ color: "#0F7FEF" }}
+        className={`flex md:hidden lg:hidden justify-center mb-8 ${StartingPage.coolImageHeadingMobile}`}
       >
         roomGPT generated
       </p>
@@ -50,36 +61,3 @@ const CoolImage = () => {
 };
 
 export default CoolImage;
-
-{
-  /* <div className="w-full p-4 space-x-4 carousel carousel-center rounded-box">
-            <div className="carousel-item">
-              <img
-                src="https://i.ibb.co/mhBJKWK/Rectangle-774.png"
-                className="rounded-box"
-              />
-            </div>
-
-            <div className="carousel-item">
-              <img
-                src="https://i.ibb.co/J5mwcg7/Rectangle-778.png"
-                className="rounded-box"
-              />
-            </div>
-
-            <div className="carousel-item">
-              <img
-                src="https://i.ibb.co/hMZdGKD/Rectangle-776.png"
-                className="rounded-box"
-              />
-            </div>
-
-            <div className="carousel-item">
-              <img
-                src="https://i.ibb.co/yPFQLSX/Rectangle-777.png"
-                className="rounded-box"
-              />
-            </div>
-
-          </div> */
-}

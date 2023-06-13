@@ -1,9 +1,12 @@
+import { useRouter } from "next/router";
 import StartingPage from "../CSSfile/StartingPage.module.css";
 
 const BuyRoomGPT = () => {
+  const router = useRouter();
+  console.log(router.pathname);
   return (
     <div className="px-2 pb-10 lg:px-32 md:px-24">
-      <h1 className={`lg:flex md:flex justify-center my-8 text-2xl hidden font-bold lg:my-24 md:my-20 lg:text-4xl md:text-3xl ${StartingPage.howItWorkscss}`}>
+      <h1 className={`lg:flex md:flex justify-center text-2xl hidden font-bold ${router.pathname == '/pricing' ? 'lg:mb-24 md:mb-20' : 'lg:my-24 md:my-20'} ${StartingPage.howItWorkscss}`}>
         Buy
         <span style={{ color: "#0F7FEF" }} className="mx-3">
           {" "}

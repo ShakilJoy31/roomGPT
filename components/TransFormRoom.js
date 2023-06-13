@@ -6,7 +6,7 @@ const TransFormRoom = () => {
       <div className={`${StartingPage.bottomBorder} py-24`}>
         <div className={`items-center justify-between lg:flex md:flex ${StartingPage.mobileBackground}`}>
           <div className="">
-            <h1 className="hidden text-4xl font-bold lg:block md:block">
+            <h1 className={`hidden font-bold lg:block md:block ${StartingPage.transformRoom}`}>
               {" "}
               <span style={{ color: "#0F7FEF" }}>
                 Transform any room
@@ -19,13 +19,14 @@ const TransFormRoom = () => {
                 <span>with</span>
               </span>
             </h1>
+
             <h1 className="flex justify-center text-xl font-bold lg:hidden md:hidden">
               <span>
                 <span> just one photo</span>
               </span>
             </h1>
 
-            <p className="hidden py-6 lg:block md:block">
+            <p className={`hidden py-6 lg:block md:block ${StartingPage.ourReview}`}>
               See what our over 1 million users are saying about the product.
             </p>
 
@@ -36,6 +37,7 @@ const TransFormRoom = () => {
             <p className="flex justify-center pb-6 lg:hidden md:hidden">
               about the product.
             </p>
+
             <button
               className={`${StartingPage.tryIt} py-2 px-8 hidden lg:block md:block`}
             >

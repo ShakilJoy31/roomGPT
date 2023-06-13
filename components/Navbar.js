@@ -1,13 +1,13 @@
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 // import NavbarCss from '../CSSfile/Navbar.module.css';
 
-const Navbar = ({setTheme}) => {
-  // const router = useRouter();
+const Navbar = ({ setTheme }) => {
+  const router = useRouter();
   return (
     <div className="">
-        {/* For Desktop user */}
-      <div className="items-center justify-between px-2 lg:px-32 md:px-24 lg:flex navbar"
-      >
+      {/* For Desktop user */}
+      <div className="items-center justify-between px-2 lg:px-32 md:px-24 lg:flex navbar">
         <div>
           <img
             className=""
@@ -18,21 +18,45 @@ const Navbar = ({setTheme}) => {
 
         <div>
           <button
-          style={{background: '#0F7FEF',
-            borderRadius: '7px'}}
+            onClick={()=>router.push('/pricing')}
+            style={{ background: "#0F7FEF", borderRadius: "7px" }}
             className={`cursor-pointer btn color-white normal-case border-0 rounded-lg`}
           >
-            <span style={{color: 'white', fontFamily: 'Gilroy',
-fontStyle: 'normal',
-fontWeight: '700',
-fontSize: '16px',
-lineHeight: '142%'}}>Log in</span>
+            <span
+              style={{
+                color: "white",
+                fontFamily: "Gilroy",
+                fontStyle: "normal",
+                fontWeight: "700",
+                fontSize: "16px",
+                lineHeight: "142%",
+              }}
+            >
+              Pricing
+            </span>
+          </button>
+
+          <button
+            style={{ background: "#0F7FEF", borderRadius: "7px" }}
+            className={`cursor-pointer btn color-white normal-case border-0 rounded-lg ml-2`}
+          >
+            <span
+              style={{
+                color: "white",
+                fontFamily: "Gilroy",
+                fontStyle: "normal",
+                fontWeight: "700",
+                fontSize: "16px",
+                lineHeight: "142%",
+              }}
+            >
+              Log in
+            </span>
           </button>
         </div>
       </div>
 
       {/* For Mobile Device */}
-      
     </div>
   );
 };
