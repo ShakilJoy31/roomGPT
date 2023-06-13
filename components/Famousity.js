@@ -38,9 +38,27 @@ const Famousity = () => {
                                 <p>Engineer & Author</p>
                             </div>
                         </div>
-                    </div>
+                    </div> 
+                    {/* userReviewWithColor */}
 
-                    <div className={`${StartingPage.userReviewWithColor} py-12 pl-8 pr-12 lg:mb-[-70px] md:mb-[-50]`}>
+                    <div className={`${StartingPage.userReview} py-12 pl-8 pr-12 `}>
+                        <div className='flex gap-x-6'>
+                            <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
+                            <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
+                            <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
+                            <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
+                            <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
+                        </div>
+                        <p className='my-8'>“ Do not let your ad money go to waste by optimizing your campaigns manually. Create workflows, instant working with raw pictures and comes to an amazing result. Fastest and very easy to use.“ </p>
+                        <div className='flex items-center'>
+                            <img style={{border: '0.852521px solid #FFFFFF', borderRadius: '50%'}} className='p-2' src="https://live.staticflickr.com/65535/52966799967_aabaab6040_m.jpg" alt="" />
+                            <div className='ml-4'>
+                                <h1 className='text-2xl font-bold'>Eve Porcilo</h1>
+                                <p>Engineer & Author</p>
+                            </div>
+                        </div>
+                    </div>
+                    {/* <div className={`${StartingPage.userReview} py-12 pl-8 pr-12 lg:mb-[-70px] md:mb-[-50]`}>
                         <div className='flex gap-x-6'>
                             <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
                             <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
@@ -56,7 +74,9 @@ const Famousity = () => {
                                 <p style={{color: 'white'}}>Engineer & Author</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+
+
                     <div className={`${StartingPage.userReview} py-12 pl-8 pr-12`}>
                         <div className='flex gap-x-6'>
                             <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
@@ -91,7 +111,7 @@ const Famousity = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`${StartingPage.userReview} py-12 pl-8 pr-12 mt-[70px] mb-[-70px]`}>
+                    <div className={`${StartingPage.userReview} py-12 pl-8 pr-12 `}>
                         <div className='flex gap-x-6'>
                             <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
                             <span style={{color: '#FFDF00'}}><BsFillStarFill size={30}></BsFillStarFill></span>
@@ -125,7 +145,9 @@ const Famousity = () => {
                             </div>
                         </div>
                     </div>
-                    
+                    {/* lg:mb-[-70px] md:mb-[-50] */}
+                    {/* mt-[70px] mb-[-70px] */}
+
                 </div>
             </div>
         </div>

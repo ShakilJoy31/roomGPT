@@ -1,3 +1,5 @@
+import StartingPage from "../CSSfile/StartingPage.module.css";
+
 const CoolImage = () => {
   return (
     <div>
@@ -11,26 +13,26 @@ const CoolImage = () => {
         roomGPT generated
       </p>
 
-      <div className="">
+      <div className="py-16">
         <div className="items-center justify-center hidden w-full lg:flex md:flex">
           <img
             src="https://i.ibb.co/mhBJKWK/Rectangle-774.png"
-            className="w-full max-w-lg h-72"
+            className={`w-full max-w-lg ${StartingPage.coolImages}`}
           />
 
           <img
             src="https://i.ibb.co/J5mwcg7/Rectangle-778.png"
-            className="w-full max-w-lg px-12 h-96"
+            className={`w-full max-w-lg px-12 ${StartingPage.coolImages}`}
           />
 
           <img
             src="https://i.ibb.co/hMZdGKD/Rectangle-776.png"
-            className="w-full max-w-lg pr-12 h-72"
+            className={`w-full max-w-lg pr-12 ${StartingPage.coolImages}`}
           />
 
           <img
             src="https://i.ibb.co/yPFQLSX/Rectangle-777.png"
-            className="w-full max-w-lg h-72"
+            className={`w-full max-w-lg ${StartingPage.coolImages}`}
           />
         </div>
 

@@ -4,9 +4,320 @@
     rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0) 102.5%
   );
-  filter: drop-shadow(0px 30px 31px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0px 30px 31px rgba(0, 0, 0, 0.03));
   border-radius: 21px;
 }
+
+.instantlyRedesignButton {
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 40%;
+  top: 25%;
+  z-index: 1;
+}
+.instantlyRedesignButton2 {
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 26%;
+  z-index: 1;
+}
+.instantlyRedesignButton3 {
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 25%;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+.instantlyRedesignButtonForMobile{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 25%;
+  margin-top: 90px;
+  z-index: 1;
+}
+
+.instantlyRedesignButtonForMobile2{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 25%;
+  margin-top: 130px;
+  z-index: 1;
+}
+
+.instantlyRedesignButtonForMobile3{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 25%;
+  margin-top: 185px;
+  z-index: 1;
+}
+
+.before{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 30%;
+  z-index: 1;
+}
+
+.beforeMobile{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  left: 20%;
+  margin-top: 240px;
+  z-index: 1;
+}
+
+.beforeMobile2{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  left: 20%;
+  margin-top: 440px;
+  z-index: 1;
+}
+.before2{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 48%;
+  margin-top: 200px;
+  z-index: 1;
+}
+.after{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 10%;
+  z-index: 1;
+}
+
+.afterMobile{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 20%;
+  margin-top: 240px;
+  z-index: 1;
+}
+.afterMobile2{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 20%;
+  margin-top: 440px;
+  z-index: 1;
+}
+.after2{
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 15%;
+  margin-top: 200px;
+  z-index: 1;
+}
+
+
+@media (min-width: 1281px) {
+  .instantlyRedesignButton {
+    background: linear-gradient(
+      90.42deg,
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(255, 255, 255, 0.97) 131.76%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(13.5px);
+    border-radius: 53px;
+    position: absolute;
+    right: 35%;
+    top: 25%;
+    z-index: 1;
+  }
+  .instantlyRedesignButton2 {
+    background: linear-gradient(
+      90.42deg,
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(255, 255, 255, 0.97) 131.76%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(13.5px);
+    border-radius: 53px;
+    position: absolute;
+    right: 22%;
+    z-index: 1;
+  }
+  .instantlyRedesignButton3 {
+    background: linear-gradient(
+      90.42deg,
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(255, 255, 255, 0.97) 131.76%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(13.5px);
+    border-radius: 53px;
+    position: absolute;
+    right: 20%;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  
+  .before2{
+    background: linear-gradient(
+      90.42deg,
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(255, 255, 255, 0.97) 131.76%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(13.5px);
+    border-radius: 53px;
+    position: absolute;
+    right: 40%;
+    margin-top: 200px;
+    z-index: 1;
+  }
+  .after2{
+    background: linear-gradient(
+      90.42deg,
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(255, 255, 255, 0.97) 131.76%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(13.5px);
+    border-radius: 53px;
+    position: absolute;
+    right: 13%;
+    margin-top: 200px;
+    z-index: 1;
+  }
+}
+
+/* .instantlyRedesignButton {
+  background: linear-gradient(
+    90.42deg,
+    rgba(255, 255, 255, 0.5) -1%,
+    rgba(255, 255, 255, 0.97) 131.76%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.83);
+  box-shadow: 0px 15px 27px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(13.5px);
+  border-radius: 53px;
+  position: absolute;
+  right: 40%;
+  top: 25%;
+  z-index: 1;
+} */
+
 .redesigningButton {
   background: #0f7fef;
   box-shadow: 0px 15px 95px rgba(15, 127, 239, 0.45);
@@ -33,22 +344,29 @@
 }
 
 .imageBorder {
-  border: 4px solid rgba(255, 255, 255, 0.83);
+  border-left: 4px solid rgba(255, 255, 255, 0.83);
+  border-top: 4px solid rgba(255, 255, 255, 0.83);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.83);
   backdrop-filter: blur(13.5px);
   padding: 5px;
+  /* border-radius: 53px; */
 }
 .userReview {
   background: rgba(255, 255, 255, 0.9);
   border: 1.5px solid #eaecf0;
   border-radius: 20px;
-  /* height: 350px; */
+  height: 350px;
+  transition-duration: 300ms;
 }
-.userReviewWithColor {
+
+.userReview:hover {
   background: #0f7fef;
   box-shadow: 25px 52px 83px rgba(15, 127, 239, 0.25);
   border-radius: 20px;
-  /* height: 450px */
+  transition-duration: 300ms;
+  height: 380px;
 }
+
 .uploadImageHead {
   background: #0f7fef;
   border: 2px solid rgba(255, 255, 255, 0.83);
@@ -177,16 +495,23 @@
   box-shadow: 0px 13px 67px rgba(15, 127, 239, 0.45);
 }
 
-.primaryContent{
-  background: radial-gradient(50% 50% at 50% 50%, rgba(15, 127, 239, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
+.primaryContent {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(15, 127, 239, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
-.HomeHoleBackground{
-  background: radial-gradient(50% 50% at 50% 50%, rgba(73, 15, 239, 0.12) 0%, rgba(255, 255, 255, 0) 100%);
-
+.HomeHoleBackground {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(73, 15, 239, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
-.homeImag{
+.homeImag {
   width: 300px;
   height: 320px;
 }
@@ -201,4 +526,14 @@
     rgba(73, 15, 239, 0.12) 0%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+
+.coolImages{
+  height: 18rem;
+  transition-duration: 300ms;
+}
+.coolImages:hover{
+  height: 22rem;
+  transition-duration: 300ms;
+  cursor: pointer;
 }

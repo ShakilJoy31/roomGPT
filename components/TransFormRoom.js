@@ -47,6 +47,27 @@ const TransFormRoom = () => {
             >
               Try it now <span></span>
             </button>
+
+            <button
+              className={`btn normal-case hidden lg:block md:block ${StartingPage.instantlyRedesignButton3} border-0`}
+            >
+              <span style={{ color: "black" }} className="flex items-center">
+                <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
+                <span>Instantly Redesign</span>
+              </span>
+            </button>
+
+
+            {/* For mobile */}
+            <button
+              className={`btn normal-case block lg:hidden md:hidden ${StartingPage.instantlyRedesignButtonForMobile3} border-0`}
+            >
+              <span style={{ color: "black" }} className="flex items-center">
+                <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
+                <span>Instantly Redesign</span>
+              </span>
+            </button>
+            
           </div>
 
           <div className="hidden lg:flex md:flex gap-x-8">
