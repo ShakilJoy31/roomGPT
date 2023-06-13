@@ -11,7 +11,7 @@ const RedesigningRooms = () => {
             <p
               className={`${StartingPage.oneMillion} flex justify-center lg:block md:block`}
             >
-              Used by over <span style={{color:'#0F7FEF'}}>1 Million</span> home design enthusiasts
+              Used by over <span style={{color:'#0F7FEF'}} className="mx-2">1 Million</span> home design enthusiasts
             </p>
 
             <h1 className={`hidden my-10 text-5xl font-bold md:text-4xl lg:block md:block ${StartingPage.RoomInSec}`}>

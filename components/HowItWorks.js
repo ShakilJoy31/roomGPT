@@ -1,7 +1,12 @@
+import { useState } from "react";
 import StartingPage from "../CSSfile/StartingPage.module.css";
 import { TbRosetteNumber1 } from "react-icons/tb";
 
 const HowItWorks = () => {
+  const [uploadImage, setUploadImage] = useState(true);
+  const [selectTheme, setSelectTheme] = useState(false);
+  const [generateResult, setGenerateResult] = useState(false);
+  console.log(uploadImage, selectTheme, generateResult)
   return (
     <div className="">
       <h1
@@ -28,9 +33,13 @@ const HowItWorks = () => {
           <div className={`${StartingPage.workingBackground} w-50`}>
             <ul className="steps steps-vertical">
 
-              <li className="step step-primary">
+              <li onClick={()=>{
+                setUploadImage(true)
+                setSelectTheme(false)
+                setGenerateResult(false)
+              }} className={`step ${uploadImage ? 'step-primary' : ''}`}>
                 <div
-                  className={`flex items-center ${StartingPage.uploadImageHead}`}
+                  className={`flex items-center ${uploadImage ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead }`}
                 >
                   <span
                     style={{
@@ -53,9 +62,13 @@ const HowItWorks = () => {
                 </div>
               </li>
 
-              <li className="step step-primary">
+              <li onClick={()=>{
+                setUploadImage(false)
+                setSelectTheme(true)
+                setGenerateResult(false)
+              }} className={`step ${selectTheme ? 'step-primary' : ''}`}>
                 <div
-                  className={`flex items-center ${StartingPage.uploadImageNonHead} mt-4`}
+                  className={`flex items-center ${selectTheme ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead } mt-4`}
                 >
                   <span
                     style={{
@@ -79,9 +92,13 @@ const HowItWorks = () => {
               </li>
 
 
-              <li className="step">
+              <li onClick={()=>{
+                setUploadImage(false)
+                setSelectTheme(false)
+                setGenerateResult(true)
+              }} className={`step ${generateResult ? 'step-primary' : ''}`}>
                 <div
-                  className={`flex items-center ${StartingPage.uploadImageNonHead} mt-4`}
+                  className={`flex items-center ${generateResult ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead } mt-4`}
                 >
                   <span
                     style={{

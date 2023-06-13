@@ -35,21 +35,21 @@ const BuyRoomGPT = () => {
             <div>
               <p
                 style={{ background: "#F1F1F1", borderRadius: "32px" }}
-                className="flex justify-center px-2 py-2 text-xl font-bold w-44"
+                className={`flex justify-center px-2 py-2 text-xl font-bold w-44 ${StartingPage.credit25}`}
               >
                 25 credits
               </p>
             </div>
             <div className="my-6">
-              <p>25 room redesigns</p>
-              <p>Every design available</p>
+              <p className={`${StartingPage.for20}`}>25 room redesigns</p>
+              <p className={`${StartingPage.for20}`}>Every design available</p>
             </div>
             <div className="mb-6">
-              <p className="text-2xl font-bold">
+              <p className={`${StartingPage.usd} text-2xl font-bold`}>
                 <span style={{ color: "#8B8D8E" }}>US</span>$7
               </p>
             </div>
-            <div>
+            <div className="flex justify-center">
               <button className={`${StartingPage.payNowButton} py-3 px-24`}>
                 {" "}
                 <span style={{ color: "white" }}>Pay Now</span>{" "}
@@ -69,23 +69,23 @@ const BuyRoomGPT = () => {
               <div>
                 <p
                   style={{ background: "#409FFF", borderRadius: "32px" }}
-                  className="flex justify-center px-2 py-2 text-xl font-bold w-44"
+                  className={`flex justify-center px-2 py-2 text-xl font-bold w-44 ${StartingPage.credit25}`}
                 >
                   25 credits
                 </p>
               </div>
               <div className="my-6">
-                <p>25 room redesigns</p>
-                <p>Every design available</p>
+                <p className={`${StartingPage.for20}`}>25 room redesigns</p>
+                <p className={`${StartingPage.for20}`}>Every design available</p>
               </div>
               <div className="mb-6">
-                <p className="text-2xl font-bold">
+                <p className={`${StartingPage.usd} text-2xl font-bold`}>
                   <span style={{ color: "#8B8D8E" }}>US</span>$7
                 </p>
               </div>
-              <div>
+              <div className="flex justify-center">
                 <button
-                  className={`${StartingPage.payNowButtonMiddle} py-3 px-24`}
+                  className={`${StartingPage.payNowButtonMiddle} py-3 px-24 `}
                 >
                   {" "}
                   <span style={{ color: "#0f7fef" }}>Pay Now</span>{" "}
@@ -98,21 +98,21 @@ const BuyRoomGPT = () => {
             <div>
               <p
                 style={{ background: "#F1F1F1", borderRadius: "32px" }}
-                className="flex justify-center px-2 py-2 text-xl font-bold w-44"
+                className={`flex justify-center px-2 py-2 text-xl font-bold w-44 ${StartingPage.credit25}`}
               >
                 25 credits
               </p>
             </div>
             <div className="my-6">
-              <p>25 room redesigns</p>
-              <p>Every design available</p>
+              <p className={`${StartingPage.for20}`}>25 room redesigns</p>
+              <p className={`${StartingPage.for20}`}>Every design available</p>
             </div>
             <div className="mb-6">
-              <p className="text-2xl font-bold">
+              <p className={`${StartingPage.usd} text-2xl font-bold`}>
                 <span style={{ color: "#8B8D8E" }}>US</span>$7
               </p>
             </div>
-            <div>
+            <div className="flex justify-center">
               <button className={`${StartingPage.payNowButton} py-3 px-24`}>
                 {" "}
                 <span style={{ color: "white" }}>Pay Now</span>{" "}

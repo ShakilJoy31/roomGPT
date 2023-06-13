@@ -428,6 +428,7 @@ line-height: 26px;
   padding: 20px;
   color: white;
   width: 340px;
+  cursor: pointer;
 }
 .uploadImageNonHead {
   background: linear-gradient(
@@ -440,7 +441,9 @@ line-height: 26px;
   padding: 20px;
   border-radius: 22px;
   width: 340px;
+  cursor: pointer;
 }
+
 
 .workingHeading{
   margin-left: 5px;
@@ -499,14 +502,14 @@ line-height: 160%;
   border: 2px solid rgba(255, 255, 255, 0.83);
   backdrop-filter: blur(13.5px);
   border-radius: 22px;
-  height: 300px;
+  height: 330px;
 }
 
 .buyCreditCardWithDiffBack {
   background: #0f7fef;
   box-shadow: 25px 64px 83px rgba(15, 127, 239, 0.25);
   border-radius: 0px 0px 30px 30px;
-  height: 300px;
+  height: 330px;
 }
 
 .whatIncBorder {
@@ -673,4 +676,30 @@ font-style: normal;
 font-weight: 600;
 font-size: 48px;
 line-height: 125%;
+}
+
+.credit25{
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 26px;
+background: #409FFF;
+border-radius: "32px"
+}
+
+.for20{
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 26px;
+}
+
+.usd{
+  font-family: 'Gilroy';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 59px;
 }
