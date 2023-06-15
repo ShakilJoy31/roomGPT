@@ -1,16 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import StartingPage from "../CSSfile/StartingPage.module.css";
 import { TbRosetteNumber1 } from "react-icons/tb";
+import { UserStore } from "../userStore";
 
 const HowItWorks = () => {
+  const { user, setUser } = UserStore.useContainer();
   const [uploadImage, setUploadImage] = useState(true);
   const [selectTheme, setSelectTheme] = useState(false);
   const [generateResult, setGenerateResult] = useState(false);
-  console.log(uploadImage, selectTheme, generateResult)
   return (
     <div className="">
       <h1
-        className={`lg:flex md:flex justify-center my-8 hidden text-4xl font-bold lg:my-16 md:my-12 ${StartingPage.howItWorkscss}`}
+        className={`lg:flex md:flex justify-center hidden mb-[109px] ${StartingPage.howItWorkscss}`}
       >
         How it{" "}
         <span style={{ color: "#0F7FEF", marginLeft: "10px" }}> Works</span>
@@ -29,8 +30,8 @@ const HowItWorks = () => {
         <span style={{ color: "#0F7FEF", marginLeft: "10px" }}> Works</span>
       </h1>
       <div className="p-2 lg:px-32 md:px-24">
-        <div className="grid items-center justify-between lf:flex md:flex">
-          <div className={`${StartingPage.workingBackground} w-50`}>
+        <div className={`grid items-center lg:justify-between lf:flex md:flex `}> 
+          <div className={`${(user == "white") ? StartingPage.workingBackground : StartingPage.workingBackgroundBlack} `}>
             <ul className="steps steps-vertical">
 
               <li onClick={()=>{
@@ -39,7 +40,7 @@ const HowItWorks = () => {
                 setGenerateResult(false)
               }} className={`step ${uploadImage ? 'step-primary' : ''}`}>
                 <div
-                  className={`flex items-center ${uploadImage ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead }`}
+                  className={`flex items-center ${(user == "white") ? (uploadImage ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead) : (uploadImage ? StartingPage.uploadImageNonHeadBlack : StartingPage.uploadImageHeadBlack )} w-[292px] lg:w-[419px]`}
                 >
                   <span
                     style={{
@@ -68,7 +69,7 @@ const HowItWorks = () => {
                 setGenerateResult(false)
               }} className={`step ${selectTheme ? 'step-primary' : ''}`}>
                 <div
-                  className={`flex items-center ${selectTheme ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead } mt-4`}
+                  className={`flex items-center ${(user == "white") ? (selectTheme ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead) : (selectTheme ? StartingPage.uploadImageNonHeadBlack : StartingPage.uploadImageHeadBlack) } lg:my-[23px] md:my-[14px] my-[20px] w-[292px] lg:w-[419px]`}
                 >
                   <span
                     style={{
@@ -98,7 +99,7 @@ const HowItWorks = () => {
                 setGenerateResult(true)
               }} className={`step ${generateResult ? 'step-primary' : ''}`}>
                 <div
-                  className={`flex items-center ${generateResult ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead } mt-4`}
+                  className={`flex items-center ${(user == "white") ? (generateResult ? StartingPage.uploadImageHead : StartingPage.uploadImageNonHead) : (generateResult ? StartingPage.uploadImageNonHeadBlack : StartingPage.uploadImageHeadBlack) } w-[292px] lg:w-[419px]`}
                 >
                   <span
                     style={{
@@ -124,114 +125,24 @@ const HowItWorks = () => {
             </ul>
           </div>
 
-          <button
-            className={`btn normal-case hidden lg:block md:block ${StartingPage.instantlyRedesignButton2} border-0`}
-          >
-            <span style={{ color: "black" }} className="flex items-center">
-              <img
-                className="mr-4"
-                src="https://i.ibb.co/SvwQmQx/Vector-2.png"
-                alt=""
-              />
-              <span>Instantly Redesign</span>
-            </span>
-          </button>
-
-          {/* For mobile */}
-          <button
-            className={`btn normal-case block lg:hidden md:hidden ${StartingPage.instantlyRedesignButtonForMobile2} border-0`}
-          >
-            <span style={{ color: "black" }} className="flex items-center">
-              <img
-                className="mr-4"
-                src="https://i.ibb.co/SvwQmQx/Vector-2.png"
-                alt=""
-              />
-              <span>Instantly Redesign</span>
-            </span>
-          </button>
-
-          {/* Before */}
-          <button
-            className={`btn normal-case hidden lg:block md:block ${StartingPage.before2} border-0`}
-          >
-            <span style={{ color: "black" }} className="flex items-center">
-              <span>Before</span>
-            </span>
-          </button>
-
-          {/* For mobile */}
-          <button
-            className={`btn normal-case block lg:hidden md:hidden ${StartingPage.beforeMobile2} border-0`}
-          >
-            <span style={{ color: "black" }} className="flex items-center">
-              <span>Before</span>
-            </span>
-          </button>
-
-          {/* After */}
-          <button
-            className={`btn normal-case hidden lg:block md:block ${StartingPage.after2} border-0`}
-          >
-            <span style={{ color: "black" }} className="flex items-center">
-              <span>After</span>
-            </span>
-          </button>
-
-          {/* For mobile */}
-
-          <button
-            className={`btn normal-case block lg:hidden md:hidden ${StartingPage.afterMobile2} border-0`}
-          >
-            <span style={{ color: "black" }} className="flex items-center">
-              <span>After</span>
-            </span>
-          </button>
-
-          <div>
+          <div className="">
             <div
-              className={`flex justify-center carousel ${StartingPage.imageBorder} px-2`}
+              className={`lg:flex hidden justify-center carousel ${StartingPage.imageBorder} px-2`}
             >
-              <div className=" carousel-item">
-                <img
-                  src="https://live.staticflickr.com/65535/52967869295_379cca8f42_m.jpg"
-                  className={`${StartingPage.homeImag} hidden lg:block md:block`}
-                />
-
-                <img
-                  src="https://live.staticflickr.com/65535/52967869295_379cca8f42_m.jpg"
-                  className={` block md:hidden lg:hidden`}
-                />
-              </div>
-
-              <div className=" carousel-item">
-                <img
-                  src="https://live.staticflickr.com/65535/52967635404_5a4146f6c2_m.jpg"
-                  className={`hidden w-full lg:block md:block ${StartingPage.homeImag}`}
-                />
-
-                <img
-                  src="https://live.staticflickr.com/65535/52967635404_5a4146f6c2_m.jpg"
-                  className={`block w-full lg:hidden md:hidden`}
-                />
+              <div className="lg:w-[670px] md:w-[450px]">
+                {
+                  (user == "white") ? <img style={{borderRadius: '30px'}} src="https://i.ibb.co/6bgh3pV/Screenshot-1360.png" alt="" /> : <img style={{borderRadius: '30px'}} src="https://i.ibb.co/k01pWDZ/Screenshot-1359.png" alt="" />
+                }
+                
               </div>
             </div>
 
-            {/* <div className={`w-full ${StartingPage.imageBorder} flex justify-center carousel ${StartingPage.imageBorder} px-2`}>
-              <div className=" carousel-item">
-                <img
-                  src="https://live.staticflickr.com/65535/52967869295_379cca8f42_m.jpg"
-                  className="w-full"
-                />
-              </div>
-              <div className=" carousel-item">
-                <img
-                  src="https://live.staticflickr.com/65535/52967635404_5a4146f6c2_m.jpg"
-                  className="w-full"
-                />
-              </div>
-            </div> */}
+            <div className="block mt-[50px] mb-[80px] md:hidden lg:hidden">
+              <img className="block mx-auto" src="https://i.ibb.co/b3QTkYp/Frame-10gfjhj00003837.png" alt="" />
+            </div>
           </div>
+
+
         </div>
       </div>
     </div>

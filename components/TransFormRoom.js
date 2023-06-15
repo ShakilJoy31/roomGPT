@@ -1,9 +1,12 @@
+import { useEffect, useState } from "react";
 import StartingPage from "../CSSfile/StartingPage.module.css";
+import { UserStore } from "../userStore";
 
 const TransFormRoom = () => {
+  const { user, setUser } = UserStore.useContainer();
   return (
-    <div className={`lg:px-32 md:px-24 px-2 py-8`}>
-      <div className={`${StartingPage.bottomBorder} py-24`}>
+    <div className={`lg:px-[135px] md:px-24 px-2 py-8`}>
+      <div className={`${StartingPage.bottomBorder} pb-[132px]`}>
         <div className={`items-center justify-between lg:flex md:flex ${StartingPage.mobileBackground}`}>
           <div className="">
             <h1 className={`hidden font-bold lg:block md:block ${StartingPage.transformRoom}`}>
@@ -49,64 +52,16 @@ const TransFormRoom = () => {
             >
               Try it now <span></span>
             </button>
-
-            <button
-              className={`btn normal-case hidden lg:block md:block ${StartingPage.instantlyRedesignButton3} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
-                <span>Instantly Redesign</span>
-              </span>
-            </button>
-
-
-            {/* For mobile */}
-            <button
-              className={`btn normal-case block lg:hidden md:hidden ${StartingPage.instantlyRedesignButtonForMobile3} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
-                <span>Instantly Redesign</span>
-              </span>
-            </button>
             
           </div>
 
-          <div className="hidden lg:flex md:flex gap-x-8">
-            <div className="mt-[120px]">
-              <img
-                className="pb-2 pl-36"
-                src="https://i.ibb.co/G7kgYW9/Vector-7.png"
-                alt=""
-              />
-
-              <img src="https://i.ibb.co/CvXM2X5/Rectangle-820.png" alt="" />
-            </div>
-
-            <img
-              className="mb-[120px]"
-              src="https://i.ibb.co/PTcCg21/Rectangle-821.png"
-              alt=""
-            />
+          <div className="hidden lg:flex md:flex">
+            <img src="https://i.ibb.co/yqYMt4Y/Group-1000003859.png" alt="" />
           </div>
 
           {/* For mobile device. */}
           <div className="flex gap-x-3 lg:hidden md:hidden">
-            <div className="mt-[30px]">
-              <img
-                className={`pl-12 pb-2 ${StartingPage.image}`}
-                src="https://i.ibb.co/G7kgYW9/Vector-7.png"
-                alt=""
-              />
-
-              <img className={`${StartingPage.image} w-44 h-44`} src="https://i.ibb.co/CvXM2X5/Rectangle-820.png" alt="" />
-            </div>
-
-            <img
-              className={`mb-[30px] w-44 h-44`}
-              src="https://i.ibb.co/PTcCg21/Rectangle-821.png"
-              alt=""
-            />
+          <img src="https://i.ibb.co/yqYMt4Y/Group-1000003859.png" alt="" />
           </div>
         </div>
       </div>

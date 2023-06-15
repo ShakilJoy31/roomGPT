@@ -7,8 +7,11 @@ import BuyRoomGPT from "../components/BuyRoomGPT";
 import CoolImage from "../components/CoolImage";
 import TransFormRoom from "../components/TransFormRoom";
 import Footer from "../components/Footer";
+import { UserStore } from "../userStore";
 const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
+  const { user, setUser } = UserStore.useContainer();
+  console.log(user); 
   return (
     <>
       <Head>

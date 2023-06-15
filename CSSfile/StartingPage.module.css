@@ -7,11 +7,15 @@
   filter: drop-shadow(0px 30px 31px rgba(0, 0, 0, 0.03));
   border-radius: 21px;
 
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 137.5%;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 137.5%;
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .instantlyRedesignButton {
@@ -28,7 +32,6 @@ line-height: 137.5%;
   right: 40%;
   top: 25%;
   z-index: 1;
-
 }
 .instantlyRedesignButton2 {
   background: linear-gradient(
@@ -384,25 +387,48 @@ line-height: 137.5%;
 }
 
 .imageBorder {
-  border-left: 4px solid rgba(255, 255, 255, 0.83);
+  /* border-left: 4px solid rgba(255, 255, 255, 0.83);
   border-top: 4px solid rgba(255, 255, 255, 0.83);
   border-bottom: 4px solid rgba(255, 255, 255, 0.83);
   backdrop-filter: blur(13.5px);
-  padding: 5px;
+  padding: 5px; */
+
+  
   /* border-radius: 53px; */
 }
+
 .userReview {
   background: rgba(255, 255, 255, 0.9);
   border: 1.5px solid #eaecf0;
   border-radius: 20px;
-  height: 330px;
+  width: 370px;
+  height: 361px;
   transition-duration: 300ms;
 
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.userReviewBlack {
+  background: #263544;
+  border: 1.5px solid #eaecf0;
+  border-radius: 20px;
+  width: 370px;
+  height: 361px;
+  transition-duration: 300ms;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
 
   margin-bottom: 20px;
   position: relative;
@@ -414,8 +440,18 @@ line-height: 26px;
   box-shadow: 25px 52px 83px rgba(15, 127, 239, 0.25);
   border-radius: 20px;
   transition-duration: 300ms;
-  height: 330px;
+  width: 370px;
+  height: 361px;
+  transform: translateY(20px);
+}
 
+.userReviewBlack:hover {
+  background: #0f7fef;
+  box-shadow: 25px 52px 83px rgba(15, 127, 239, 0.25);
+  border-radius: 20px;
+  transition-duration: 300ms;
+  width: 370px;
+  height: 361px;
   transform: translateY(20px);
 }
 
@@ -425,11 +461,26 @@ line-height: 26px;
   box-shadow: 0px 26px 43px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(13.5px);
   border-radius: 22px;
-  padding: 20px;
+  padding: 16px 25px 16px 14px;
   color: white;
-  width: 340px;
+  /* height: 120px; */
   cursor: pointer;
 }
+
+.uploadImageHeadBlack {
+  background: #263544;
+  border-radius: 20px;
+  padding: 16px 25px 16px 14px;
+}
+
+.uploadImageNonHeadBlack {
+  padding: 16px 25px 16px 14px;
+  background: #0f7fef;
+  box-shadow: 0px 26px 43px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(13.5px);
+  border-radius: 22px;
+}
+
 .uploadImageNonHead {
   background: linear-gradient(
     90.42deg,
@@ -438,26 +489,24 @@ line-height: 26px;
   );
   border: 2px solid rgba(255, 255, 255, 0.83);
   backdrop-filter: blur(13.5px);
-  padding: 20px;
+  padding: 16px 25px 16px 14px;
   border-radius: 22px;
-  width: 340px;
   cursor: pointer;
+
+  /* For desktop media query will be added.  */
 }
 
-
-.workingHeading{
+.workingHeading {
   margin-left: 5px;
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 160%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 160%;
 }
-
 
 /* Media query */
 @media (max-width: 768px) {
-
   .uploadImageHead {
     background: #0f7fef;
     border: 2px solid rgba(255, 255, 255, 0.83);
@@ -466,7 +515,7 @@ line-height: 160%;
     border-radius: 22px;
     padding: 20px;
     color: white;
-    width: 330px;
+    /* width: 292px; */
   }
   .uploadImageNonHead {
     background: linear-gradient(
@@ -478,20 +527,49 @@ line-height: 160%;
     backdrop-filter: blur(13.5px);
     padding: 20px;
     border-radius: 22px;
-    width: 330px;
   }
 
+  .buyCreditCard {
+    background: linear-gradient(
+      90.42deg,
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(255, 255, 255, 0.97) 131.76%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    backdrop-filter: blur(13.5px);
+    border-radius: 22px;
 
-  .workingHeading{
+    /* background: #263544; */
+    border-radius: 20px;
+  }
+
+  .oneMillion {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 102.5%
+    );
+    filter: drop-shadow(0px 30px 31px rgba(0, 0, 0, 0.03));
+    border-radius: 21px;
+
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 137.5%;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .workingHeading {
     margin-left: 5px;
-    font-family: 'Gilroy-Medium';
-font-size: 16px;
-line-height: 160%;
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    line-height: 160%;
   }
-
-  
 }
-
 
 .buyCreditCard {
   background: linear-gradient(
@@ -502,23 +580,30 @@ line-height: 160%;
   border: 2px solid rgba(255, 255, 255, 0.83);
   backdrop-filter: blur(13.5px);
   border-radius: 22px;
-  height: 330px;
 }
 
+.buyCreditCardBlack {
+  border: 2px solid #4d657d;
+  backdrop-filter: blur(13.5px);
 
-.coolImageHeadingMobile{
-  font-family: 'Gilroy';
+  box-sizing: border-box;
+
+  background: #263544;
+  border-radius: 20px;
+}
+
+.coolImageHeadingMobile {
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 125%;
-  }
+}
 
 .buyCreditCardWithDiffBack {
   background: #0f7fef;
   box-shadow: 25px 64px 83px rgba(15, 127, 239, 0.25);
   border-radius: 0px 0px 30px 30px;
-  height: 330px;
 }
 
 .whatIncBorder {
@@ -528,7 +613,6 @@ line-height: 160%;
 .mostPopular {
   background: #354e67;
   border-radius: 30px 30px 0px 0px;
-  /* border-radius: 30px; */
   color: white;
 }
 
@@ -543,6 +627,17 @@ line-height: 160%;
   backdrop-filter: blur(13.5px);
   border-radius: 22px;
   padding: 40px;
+}
+
+
+.boroCardBlack {
+  border: 2px solid #4d657d;
+  backdrop-filter: blur(13.5px);
+  border-radius: 22px;
+  padding: 40px;
+  box-sizing: border-box;
+background: #263544;
+border-radius: 20px;
 }
 
 .BoroBackground {
@@ -575,6 +670,24 @@ line-height: 160%;
   background: radial-gradient(
     50% 50% at 50% 50%,
     rgba(73, 15, 239, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* .workingBackgroundBlackForBack {
+
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(73, 15, 239, 0.12) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+} */
+
+.workingBackgroundBlack {
+  /* background: radial-gradient(50% 50% at 50% 50%, rgba(15, 127, 239, 0.11) 0%, rgba(255, 255, 255, 0) 100%); */
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(15, 127, 239, 0.11) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -658,10 +771,6 @@ line-height: 160%;
 
 /* For the font of this application */
 
-
-
-
-
 .RoomInSec {
   font-family: "Gilroy";
   font-style: normal;
@@ -670,68 +779,68 @@ line-height: 160%;
   line-height: 125%;
 }
 
-.HomeForMobile{
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 125%;
-text-align: center;
+.HomeForMobile {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  text-align: center;
 }
 
-.howItWorkscss{
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 125%;
+.howItWorkscss {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
 }
 
-.credit25{
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 26px;
-background: #409FFF;
-border-radius: "32px"
+.credit25 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 26px;
+  background: #409fff;
+  border-radius: "32px";
 }
 
-.for20{
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 26px;
+.for20 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
 }
 
-.usd{
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 700;
-font-size: 48px;
-line-height: 59px;
+.usd {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
 }
 
-.coolImageHeading{
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 48px;
-line-height: 125%;
+.coolImageHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
 }
 
-.transformRoom{
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 125%;
+.transformRoom {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
 }
-.ourReview{
-  font-family: 'Gilroy';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 154.5%;
+.ourReview {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 154.5%;
 }

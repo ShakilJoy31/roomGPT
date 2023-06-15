@@ -1,25 +1,40 @@
+import { useEffect, useState } from "react";
 import StartingPage from "../CSSfile/StartingPage.module.css";
+import { UserStore } from "../userStore";
 
 const RedesigningRooms = () => {
+  const { user, setUser } = UserStore.useContainer();
   return (
     <div>
       <div clssName={`w-full hero ${StartingPage.homeBackground}`}>
         <div
-          className={`flex flex-col justify-between w-full lg:pl-32 md:pl-24 lg:flex-row ${StartingPage.HomeHoleBackground}`}
+          className={`flex flex-col justify-between w-full lg:pl-[135px] md:pl-24 lg:flex-row ${StartingPage.HomeHoleBackground}`}
         >
           <div className={`${StartingPage.primaryContent}`}>
-            <p
-              className={`${StartingPage.oneMillion} flex justify-center lg:block md:block`}
-            >
-              <span>Used by over</span> <span style={{color:'#0F7FEF'}} className="mx-2">1 Million</span> <span>home design enthusiasts</span>
-            </p>
 
-            <h1 className={`hidden my-10 text-5xl font-bold md:text-4xl lg:block md:block ${StartingPage.RoomInSec}`}>
+            <div className={`${StartingPage.oneMillion}`}>
+              <p
+                className={`flex justify-center lg:block md:block`}
+                >
+                <span>Used by over</span>{" "}
+                <span style={{ color: "#0F7FEF" }} className="">
+                  1 Million
+                </span>{" "}
+                <span>home design enthusiasts</span>
+              </p>
+            </div>
+
+            
+            <h1
+              className={`hidden mt-[40px] mb-[60px] lg:block md:block ${StartingPage.RoomInSec}`}
+            >
               Redesigning <br /> Rooms in Seconds <br />{" "}
               <span style={{ color: "#0F7FEF" }}>Using AI</span>
             </h1>
 
-            <h1 className={`block my-4 text-2xl font-bold lg:hidden md:hidden ${StartingPage.HomeForMobile}`}>
+            <h1
+              className={`block my-4 text-2xl font-bold lg:hidden md:hidden ${StartingPage.HomeForMobile}`}
+            >
               <span className="flex justify-center">Redesigning Rooms in</span>
               <span
                 style={{ color: "#0F7FEF" }}
@@ -37,64 +52,60 @@ const RedesigningRooms = () => {
 
             {/* Instantly Redesign */}
 
-            <button
+            {/* <button
               className={`btn normal-case hidden lg:block md:block ${StartingPage.instantlyRedesignButton} border-0`}
             >
               <span style={{ color: "black" }} className="flex items-center">
                 <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
                 <span>Instantly Redesign</span>
               </span>
-            </button>
+            </button> */}
 
             {/* For mobile */}
-            <button
+            {/* <button
               className={`btn normal-case block lg:hidden md:hidden ${StartingPage.instantlyRedesignButtonForMobile} border-0`}
             >
               <span style={{ color: "black" }} className="flex items-center">
                 <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
                 <span>Instantly Redesign</span>
               </span>
-            </button>
-
+            </button> */}
 
             {/* Before */}
-            <button
+            {/* <button
               className={`btn normal-case hidden lg:block md:block ${StartingPage.before} border-0`}
             >
               <span style={{ color: "black" }} className="flex items-center">
                 <span>Before</span>
               </span>
-            </button>
+            </button> */}
 
             {/* For mobile */}
-            <button
+            {/* <button
               className={`btn normal-case block lg:hidden md:hidden ${StartingPage.beforeMobile} border-0`}
             >
               <span style={{ color: "black" }} className="flex items-center">
                 <span>Before</span>
               </span>
-            </button>
+            </button> */}
 
             {/* After */}
-            <button
+            {/* <button
               className={`btn normal-case hidden lg:block md:block ${StartingPage.after} border-0`}
             >
               <span style={{ color: "black" }} className="flex items-center">
                 <span>After</span>
               </span>
-            </button>
+            </button> */}
 
             {/* For mobile */}
-            <button
+            {/* <button
               className={`btn normal-case block lg:hidden md:hidden ${StartingPage.afterMobile} border-0`}
             >
               <span style={{ color: "black" }} className="flex items-center">
                 <span>After</span>
               </span>
-            </button>
-
-
-
+            </button> */}
 
             {/* For mobile before after and instantly redesign */}
 
@@ -105,7 +116,20 @@ const RedesigningRooms = () => {
             </button>
           </div>
 
-          <div
+          {/* <img src="https://i.ibb.co/4ZD3sMz/Screenshot-1351.png" alt="" /> */}
+          <img
+            className="hidden lg:block md:block"
+            src="https://i.ibb.co/McGfymd/Group-1000003861.png"
+            alt=""
+          />
+
+          <img
+            className="block lg:hidden md:hidden"
+            src="https://i.ibb.co/mXGpNpP/Group-1000003889.png"
+            alt=""
+          />
+
+          {/* <div
             className={`flex justify-center carousel ${StartingPage.imageBorder} px-2`}
           >
             <div className=" carousel-item">
@@ -130,63 +154,37 @@ const RedesigningRooms = () => {
                 className={`block w-full lg:hidden md:hidden`}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className={`px-32 my-24 hidden lg:block md:block`}>
+      <div className={`lg:px-[141px] my-24 hidden lg:block md:block`}>
         <div className={`flex justify-between`}>
-          <img
-            src="https://live.staticflickr.com/65535/52967308051_9e8b71c50e_m.jpg"
-            alt=""
-          />
-          <img
-            src="https://live.staticflickr.com/65535/52967766958_88df72c00c_m.jpg"
-            alt=""
-          />
-          <img
-            src="https://live.staticflickr.com/65535/52967766083_fe7ca1e1af_m.jpg"
-            alt=""
-          />
-          <img
-            src="https://live.staticflickr.com/65535/52967447384_94549ceea0_m.jpg"
-            alt=""
-          />
-          <img
-            src="https://live.staticflickr.com/65535/52967447304_1e5a1cb85d_m.jpg"
-            alt=""
-          />
+          <img src="https://i.ibb.co/1bVwYxb/Frame-113.png" alt="" />
+          <img src="https://i.ibb.co/DWtYzts/Frame-dsgda.png" alt="" />
+          <img src="https://i.ibb.co/KsGGD9k/Frameghgd-113.png" alt="" />
+          <img src="https://i.ibb.co/CHGdT3Z/Frafdgggggme-113.png" alt="" />
+          <img src="https://i.ibb.co/YpYtQJX/Frazzzzzme-113.png" alt="" />
         </div>
       </div>
 
+      {/* For mobile */}
       <div className={`px-2 my-24 block lg:hidden md:hidden`}>
         <div className={``}>
           <div className="flex justify-between">
-            <img
-              src="https://live.staticflickr.com/65535/52967308051_9e8b71c50e_m.jpg"
-              alt=""
-            />
-            <img
-              src="https://live.staticflickr.com/65535/52967766958_88df72c00c_m.jpg"
-              alt=""
-            />
+            <img src="https://i.ibb.co/1bVwYxb/Frame-113.png" alt="" />
+            <img src="https://i.ibb.co/DWtYzts/Frame-dsgda.png" alt="" />
           </div>
 
           <img
             className="block mx-auto my-5"
-            src="https://live.staticflickr.com/65535/52967766083_fe7ca1e1af_m.jpg"
+            src="https://i.ibb.co/KsGGD9k/Frameghgd-113.png"
             alt=""
           />
 
           <div className="flex justify-between">
-            <img
-              src="https://live.staticflickr.com/65535/52967447384_94549ceea0_m.jpg"
-              alt=""
-            />
-            <img
-              src="https://live.staticflickr.com/65535/52967447304_1e5a1cb85d_m.jpg"
-              alt=""
-            />
+            <img src="https://i.ibb.co/CHGdT3Z/Frafdgggggme-113.png" alt="" />
+            <img src="https://i.ibb.co/YpYtQJX/Frazzzzzme-113.png" alt="" />
           </div>
         </div>
       </div>

@@ -1,14 +1,17 @@
+import { useEffect, useState } from "react";
 import StartingPage from "../CSSfile/StartingPage.module.css";
+import { UserStore } from "../userStore";
 
 const CoolImage = () => {
+  const { user, setUser } = UserStore.useContainer();
   return (
     <div>
-      <p className={`hidden lg:flex md:flex justify-center mt-8 ${StartingPage.coolImageHeading}`}> 
+      <p className={`hidden lg:flex md:flex justify-center mt-[155px] ${StartingPage.coolImageHeading}`}> 
         Some cool images that
       </p>
       <p
         style={{ color: "#0F7FEF" }}
-        className={`hidden lg:flex md:flex justify-center mb-8 ${StartingPage.coolImageHeading}`}
+        className={`hidden lg:flex md:flex justify-center ${StartingPage.coolImageHeading}`}
       >
         roomGPT generated
       </p>
@@ -24,7 +27,7 @@ const CoolImage = () => {
         roomGPT generated
       </p>
 
-      <div className="py-16">
+      <div className="mt-[148px] mb-[223px]">
         <div className="items-center justify-center hidden w-full lg:flex md:flex">
           <img
             src="https://i.ibb.co/mhBJKWK/Rectangle-774.png"

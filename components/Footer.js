@@ -1,4 +1,8 @@
+import { useEffect, useState } from "react";
+import { UserStore } from "../userStore";
+
 const Footer = () => {
+  const { user, setUser } = UserStore.useContainer();
   return (
     <div className="px-2 pb-6 lg:px-32 md:px-24">
       <div className="items-center justify-between hidden lg:flex md:flex">

@@ -1,19 +1,40 @@
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 // import NavbarCss from '../CSSfile/Navbar.module.css';
+import { UserStore } from "../userStore";
 
-const Navbar = ({ setTheme }) => {
+const Navbar = ({ setTheme, theme }) => {
+  const { user, setUser } = UserStore.useContainer();
   const router = useRouter();
+  const handleDarkMood = () =>{
+    if(theme === 'white'){
+      setTheme('black');
+      setUser('black');
+      localStorage.setItem("color", JSON.stringify('black'));
+    }else{
+      setTheme('white');
+      setUser('white');
+      localStorage.setItem("color", JSON.stringify('white'));
+    }
+  }
+  console.log(user);
   return (
     <div className="">
       {/* For Desktop user */}
-      <div className="items-center justify-between px-2 lg:px-32 md:px-24 lg:flex navbar">
+      <div className="items-center justify-between px-2 lg:px-[135px] md:px-24 lg:flex navbar">
         <div>
-          <img
+          {
+            (user == 'white') ? <img
             className=""
-            src="https://live.staticflickr.com/65535/52967705289_233738a1d8_m.jpg"
+            src="https://i.ibb.co/2szGqxm/Group-2.png"
             alt=""
-          />
+          /> : <img
+          className=""
+          src="https://i.ibb.co/9pZcwPJ/Grohgjhgjup-2.png"
+          alt=""
+        />
+          }
+          
         </div>
 
         <div>
@@ -37,6 +58,7 @@ const Navbar = ({ setTheme }) => {
           </button>
 
           <button
+            onClick={handleDarkMood}
             style={{ background: "#0F7FEF", borderRadius: "7px" }}
             className={`cursor-pointer btn color-white normal-case border-0 rounded-lg ml-2`}
           >
@@ -50,7 +72,7 @@ const Navbar = ({ setTheme }) => {
                 lineHeight: "142%",
               }}
             >
-              Log in
+              Dark
             </span>
           </button>
         </div>
