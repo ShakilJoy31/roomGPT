@@ -393,7 +393,6 @@
   backdrop-filter: blur(13.5px);
   padding: 5px; */
 
-  
   /* border-radius: 53px; */
 }
 
@@ -416,6 +415,34 @@
   transition: transform 0.3s ease;
 }
 
+.userReviewBig {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid #eaecf0;
+  border-radius: 20px;
+  width: 370px;
+  height: 413px;
+  transition-duration: 300ms;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.userReviewBig:hover {
+  background: #0f7fef;
+  box-shadow: 25px 52px 83px rgba(15, 127, 239, 0.25);
+  border-radius: 20px;
+  transition-duration: 300ms;
+  width: 370px;
+  height: 413px;
+  transform: translateY(20px);
+}
+
 .userReviewBlack {
   background: #263544;
   border: 1.5px solid #eaecf0;
@@ -423,6 +450,47 @@
   width: 370px;
   height: 361px;
   transition-duration: 300ms;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.userReviewBigBlack {
+  background: #263544;
+  border: 1.5px solid #eaecf0;
+  border-radius: 20px;
+  width: 370px;
+  height: 413px;
+  transition-duration: 300ms;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+
+  margin-bottom: 20px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.userReviewBigBlack:hover {
+  background: #0f7fef;
+  box-shadow: 25px 52px 83px rgba(15, 127, 239, 0.25);
+  border-radius: 20px;
+  transition-duration: 300ms;
+  width: 370px;
+  height: 413px;
+  transform: translateY(20px);
+
+  border: 1.5px solid #eaecf0;
 
   font-family: "Gilroy";
   font-style: normal;
@@ -580,6 +648,8 @@
   border: 2px solid rgba(255, 255, 255, 0.83);
   backdrop-filter: blur(13.5px);
   border-radius: 22px;
+
+
 }
 
 .buyCreditCardBlack {
@@ -622,6 +692,10 @@
     #ffffff 0.93%,
     rgba(255, 255, 255, 0.97) 103.61%
   );
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
   border: 2px solid rgba(255, 255, 255, 0.83);
   box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(13.5px);
@@ -629,15 +703,14 @@
   padding: 40px;
 }
 
-
 .boroCardBlack {
   border: 2px solid #4d657d;
   backdrop-filter: blur(13.5px);
   border-radius: 22px;
   padding: 40px;
   box-sizing: border-box;
-background: #263544;
-border-radius: 20px;
+  background: #263544;
+  border-radius: 20px;
 }
 
 .BoroBackground {
@@ -672,6 +745,11 @@ border-radius: 20px;
     rgba(73, 15, 239, 0.12) 0%,
     rgba(255, 255, 255, 0) 100%
   );
+
+  /* background: linear-gradient(to right, rgba(73, 15, 239, 0.12) 0%, rgba(255, 255, 255, 0) 100%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 /* .workingBackgroundBlackForBack {
@@ -843,4 +921,25 @@ border-radius: 20px;
   font-weight: 400;
   font-size: 24px;
   line-height: 154.5%;
+}
+
+.selected {
+  background-image: url("https://i.ibb.co/g32xxTm/Ellipse-8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3.85px;
+  z-index: 1;
+}
+.notSelected {
+  background-image: url("https://i.ibb.co/g32xxTm/Ellipse-8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 2.5px solid #0f7fef;
+  border-radius: 50%;
+  z-index: 1;
 }

@@ -1,6 +1,5 @@
 import { BsFillStarFill } from "react-icons/bs";
 import StartingPage from "../CSSfile/StartingPage.module.css";
-import { useEffect, useState } from "react";
 import { UserStore } from "../userStore";
 import { useRouter } from "next/router";
 
@@ -52,7 +51,7 @@ const Famousity = () => {
 
       <div className="mb-[227px]">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 md:grid-cols-2">
-          <div className={`${user == "white" ? StartingPage.userReview : StartingPage.userReviewBlack} py-12 pl-8 pr-12 `}>
+          <div className={`${user == "white" ? StartingPage.userReview : StartingPage.userReviewBlack} py-[58px] pl-8 pr-12 `}>
             <div className="flex gap-x-6">
               <span style={{ color: "#FFDF00" }}>
                 <BsFillStarFill size={30}></BsFillStarFill>
@@ -91,7 +90,8 @@ const Famousity = () => {
             </div>
           </div>
 
-          <div className={`${user == "white" ? StartingPage.userReview : StartingPage.userReviewBlack} py-12 pl-8 pr-12 `}>
+          <div className={`${user == "white" ? StartingPage.userReview : StartingPage.userReviewBlack} py-[58px] pl-8 pr-12 `}>
+          {/* className={`${user == "white" ? StartingPage.userReviewBig : StartingPage.userReviewBigBlack} py-[58px] pl-8 pr-12 `} */}
             <div className="flex gap-x-6">
               <span style={{ color: "#FFDF00" }}>
                 <BsFillStarFill size={30}></BsFillStarFill>
@@ -110,7 +110,7 @@ const Famousity = () => {
               </span>
             </div>
             <p className="my-8">
-              “ Do not let your ad money go to waste by optimizing your
+            “ Do not let your ad money go to waste by optimizing your
               campaigns manually. Create workflows “
             </p>
             <div className="flex items-center">
