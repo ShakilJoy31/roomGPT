@@ -63,7 +63,7 @@ const HowItWorks = () => {
                 </div>
 
                 <img
-                  className={`hidden lg:block ${StartingPage.lineImage}`}
+                  className={`hidden lg:block`}
                   style={{
                     position: "absolute",
                     left: "9.2%",
