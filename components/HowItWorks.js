@@ -34,10 +34,10 @@ const HowItWorks = () => {
                 ? StartingPage.workingBackground
                 : StartingPage.workingBackgroundBlack}`}>
         <div
-          className={`grid items-center lg:justify-between lf:flex md:flex `}
+          className={`grid lg:items-center lf:flex md:flex `}
         >
           <div
-            className={` flex justify-center items-center`}
+            className={`lg:mr-[38px] flex justify-center items-center`}
           >
             <ul>
             {/* className={`${user == "white"
@@ -105,15 +105,15 @@ const HowItWorks = () => {
                   >
                     <span
                       style={{
-                        paddingTop: "8px",
-                        paddingBottom: "8px",
-                        paddingLeft: "15px",
-                        paddingRight: "15px",
+                        paddingTop: "7px",
+                        paddingBottom: "7px",
+                        paddingLeft: "10px",
+                        paddingRight: "10px",
                         borderRadius: "50%",
-                        background: "rgba(236, 245, 255, 0.24);",
+                        background: ` ${user == 'white' ? (uploadImage ? 'rgba(236, 245, 255, 0.24)' : '#ECF5FF') : (uploadImage ? 'rgba(236, 245, 255, 0.24)' : '#3B5B7A')}`,
                       }}
                     >
-                      1
+                      01
                     </span>
                     <p className={`${StartingPage.workingHeading}`}>
                       Upload an image of a room
@@ -158,15 +158,15 @@ const HowItWorks = () => {
                   >
                     <span
                       style={{
-                        paddingTop: "8px",
-                        paddingBottom: "8px",
-                        paddingLeft: "15px",
-                        paddingRight: "15px",
+                        paddingTop: "7px",
+                        paddingBottom: "7px",
+                        paddingLeft: "10px",
+                        paddingRight: "10px",
                         borderRadius: "50%",
-                        background: "rgba(236, 245, 255, 0.24);",
+                        background: ` ${user == 'white' ? (selectTheme ? 'rgba(236, 245, 255, 0.24)' : '#ECF5FF') : (selectTheme ? 'rgba(236, 245, 255, 0.24)' : '#3B5B7A')}`,
                       }}
                     >
-                      2
+                      02
                     </span>
                     <p className={`${StartingPage.workingHeading}`}>
                       Select the theme(s)
@@ -211,15 +211,15 @@ const HowItWorks = () => {
                   >
                     <span
                       style={{
-                        paddingTop: "8px",
-                        paddingBottom: "8px",
-                        paddingLeft: "15px",
-                        paddingRight: "15px",
+                        paddingTop: "7px",
+                        paddingBottom: "7px",
+                        paddingLeft: "10px",
+                        paddingRight: "10px",
                         borderRadius: "50%",
-                        background: "rgba(236, 245, 255, 0.24);",
+                        background: ` ${user == 'white' ? (generateResult ? 'rgba(236, 245, 255, 0.24)' : '#ECF5FF') : (generateResult ? 'rgba(236, 245, 255, 0.24)' : '#3B5B7A')}`,
                       }}
                     >
-                      2
+                      03
                     </span>
                     <p className={`${StartingPage.workingHeading}`}>
                       Get their generated result
@@ -259,6 +259,8 @@ const HowItWorks = () => {
               />
             </div>
           </div>
+
+
         </div>
       </div>
     </div>

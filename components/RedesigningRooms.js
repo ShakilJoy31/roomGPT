@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import StartingPage from "../CSSfile/StartingPage.module.css";
 import { UserStore } from "../userStore";
+import { AiOutlineLogout } from "react-icons/ai";
 
 const RedesigningRooms = () => {
   const { user, setUser } = UserStore.useContainer();
   return (
-    <div>
+    <div className="lg:mt-[65px] md:mt-[45px]">
       <div clssName={`w-full hero ${StartingPage.homeBackground}`}>
         <div
           className={`flex flex-col justify-between w-full lg:pl-[135px] md:pl-24 lg:flex-row ${StartingPage.HomeHoleBackground}`}
@@ -26,7 +27,7 @@ const RedesigningRooms = () => {
 
             
             <h1
-              className={`hidden mt-[40px] mb-[60px] lg:block md:block ${StartingPage.RoomInSec}`}
+              className={`hidden lg:mt-[40px] mb-[60px] lg:block md:block ${StartingPage.RoomInSec}`}
             >
               Redesigning <br /> Rooms in Seconds <br />{" "}
               <span style={{ color: "#0F7FEF" }}>Using AI</span>
@@ -45,74 +46,19 @@ const RedesigningRooms = () => {
             </h1>
 
             <button
-              className={`btn normal-case hidden lg:block md:block ${StartingPage.redesigningButton} border-0`}
+              className={`btn normal-case hidden lg:flex md:flex justify-between items-center ${StartingPage.redesigningButton} border-0`}
             >
-              <span style={{ color: "white" }}>Redesign your room</span>
+              <span style={{ color: "white", marginRight: '13px' }}>Redesign your room</span>
+              <span><AiOutlineLogout size={25} color={'white'}></AiOutlineLogout></span>
             </button>
-
-            {/* Instantly Redesign */}
-
-            {/* <button
-              className={`btn normal-case hidden lg:block md:block ${StartingPage.instantlyRedesignButton} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
-                <span>Instantly Redesign</span>
-              </span>
-            </button> */}
-
-            {/* For mobile */}
-            {/* <button
-              className={`btn normal-case block lg:hidden md:hidden ${StartingPage.instantlyRedesignButtonForMobile} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <img className="mr-4" src="https://i.ibb.co/SvwQmQx/Vector-2.png" alt="" />
-                <span>Instantly Redesign</span>
-              </span>
-            </button> */}
-
-            {/* Before */}
-            {/* <button
-              className={`btn normal-case hidden lg:block md:block ${StartingPage.before} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <span>Before</span>
-              </span>
-            </button> */}
-
-            {/* For mobile */}
-            {/* <button
-              className={`btn normal-case block lg:hidden md:hidden ${StartingPage.beforeMobile} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <span>Before</span>
-              </span>
-            </button> */}
-
-            {/* After */}
-            {/* <button
-              className={`btn normal-case hidden lg:block md:block ${StartingPage.after} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <span>After</span>
-              </span>
-            </button> */}
-
-            {/* For mobile */}
-            {/* <button
-              className={`btn normal-case block lg:hidden md:hidden ${StartingPage.afterMobile} border-0`}
-            >
-              <span style={{ color: "black" }} className="flex items-center">
-                <span>After</span>
-              </span>
-            </button> */}
 
             {/* For mobile before after and instantly redesign */}
 
             <button
-              className={`btn normal-case block mb-4 mx-auto lg:hidden md:hidden ${StartingPage.redesigningButton} border-0`}
+              className={`btn normal-case flex justify-between items-center mb-4 mx-auto lg:hidden md:hidden ${StartingPage.redesigningButton} border-0`}
             >
-              <span style={{ color: "white" }}>Redesign your room</span>
+              <span style={{ color: "white", marginRight: '12px' }}>Redesign your room</span>
+              <span><AiOutlineLogout size={25} color={'white'}></AiOutlineLogout></span>
             </button>
           </div>
 
@@ -158,7 +104,7 @@ const RedesigningRooms = () => {
         </div>
       </div>
 
-      <div className={`lg:px-[141px] my-24 hidden lg:block md:block`}>
+      <div className={`lg:px-[141px] lg:mt-[157px] hidden lg:block md:block`}>
         <div className={`flex justify-between`}>
           <img src="https://i.ibb.co/1bVwYxb/Frame-113.png" alt="" />
           <img src="https://i.ibb.co/DWtYzts/Frame-dsgda.png" alt="" />
@@ -169,7 +115,7 @@ const RedesigningRooms = () => {
       </div>
 
       {/* For mobile */}
-      <div className={`px-2 my-24 block lg:hidden md:hidden`}>
+      <div className={`px-2 mt-[60px] block lg:hidden md:hidden`}>
         <div className={``}>
           <div className="flex justify-between">
             <img src="https://i.ibb.co/1bVwYxb/Frame-113.png" alt="" />

@@ -7,8 +7,8 @@ const Famousity = () => {
   const { user, setUser } = UserStore.useContainer();
   const router = useRouter(); 
   return (
-    <div className={`px-2 lg:px-[135px] md:px-16 ${router.pathname == '/pricing' ? 'mt-[182px] mb-[80px]' : '' }`}>
-      <div className="justify-between hidden mb-24 lg:flex md:flex">
+    <div className={`px-2 lg:px-[135px] md:px-16 ${router.pathname == '/pricing' ? 'mt-[182px] mb-[80px]' : 'lg:mt-[170px] md:mt-[130px]' }`}>
+      <div className="justify-between hidden lg:mb-[93px] md:mb-[53px] lg:flex md:flex">
         <h1 className="text-4xl font-bold">
           Loved by many <br />{" "}
           <span style={{ color: "#0F7FEF" }}>Worldwide</span>
@@ -17,7 +17,7 @@ const Famousity = () => {
         {(user == "white") ? (
           <img
             className=""
-            src="https://live.staticflickr.com/65535/52966728727_f3c81aa50b_m.jpg"
+            src="https://i.ibb.co/0F76WC2/Group-1000003816.png"
             alt=""
           />
         ) : (
@@ -75,12 +75,8 @@ const Famousity = () => {
             </p>
             <div className="flex items-center">
               <img
-                style={{
-                  border: "0.852521px solid #0F7FEF",
-                  borderRadius: "50%",
-                }}
-                className="p-2"
-                src="https://live.staticflickr.com/65535/52966799967_aabaab6040_m.jpg"
+                className={`p-2 ${StartingPage.userImageBorder}`}
+                src="https://i.ibb.co/zR8M5Tz/Ellipse-2.png"
                 alt=""
               />
               <div className="ml-4">
@@ -115,12 +111,8 @@ const Famousity = () => {
             </p>
             <div className="flex items-center">
               <img
-                style={{
-                  border: "0.852521px solid #FFFFFF",
-                  borderRadius: "50%",
-                }}
-                className="p-2"
-                src="https://live.staticflickr.com/65535/52966799967_aabaab6040_m.jpg"
+                className={`p-2 ${StartingPage.userImageBorder}`}
+                src="https://i.ibb.co/zR8M5Tz/Ellipse-2.png"
                 alt=""
               />
               <div className="ml-4">
@@ -154,12 +146,9 @@ const Famousity = () => {
             </p>
             <div className="flex items-center">
               <img
-                style={{
-                  border: "0.852521px solid #0F7FEF",
-                  borderRadius: "50%",
-                }}
-                className="p-2"
-                src="https://live.staticflickr.com/65535/52966799967_aabaab6040_m.jpg"
+                
+                className={`p-2 ${StartingPage.userImageBorder}`}
+                src="https://i.ibb.co/zR8M5Tz/Ellipse-2.png"
                 alt=""
               />
               <div className="ml-4">
@@ -192,12 +181,9 @@ const Famousity = () => {
             </p>
             <div className="flex items-center">
               <img
-                style={{
-                  border: "0.852521px solid #0F7FEF",
-                  borderRadius: "50%",
-                }}
-                className="p-2"
-                src="https://live.staticflickr.com/65535/52966799967_aabaab6040_m.jpg"
+                
+                className={`p-2 ${StartingPage.userImageBorder}`}
+                src="https://i.ibb.co/zR8M5Tz/Ellipse-2.png"
                 alt=""
               />
               <div className="ml-4">
@@ -230,12 +216,9 @@ const Famousity = () => {
             </p>
             <div className="flex items-center">
               <img
-                style={{
-                  border: "0.852521px solid #0F7FEF",
-                  borderRadius: "50%",
-                }}
-                className="p-2"
-                src="https://live.staticflickr.com/65535/52966799967_aabaab6040_m.jpg"
+                
+                className={`p-2 ${StartingPage.userImageBorder}`}
+                src="https://i.ibb.co/zR8M5Tz/Ellipse-2.png"
                 alt=""
               />
               <div className="ml-4">
@@ -268,12 +251,9 @@ const Famousity = () => {
             </p>
             <div className="flex items-center">
               <img
-                style={{
-                  border: "0.852521px solid #0F7FEF",
-                  borderRadius: "50%",
-                }}
-                className="p-2"
-                src="https://live.staticflickr.com/65535/52966799967_aabaab6040_m.jpg"
+                
+                className={`p-2 ${StartingPage.userImageBorder}`}
+                src="https://i.ibb.co/zR8M5Tz/Ellipse-2.png"
                 alt=""
               />
               <div className="ml-4">

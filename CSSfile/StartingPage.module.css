@@ -511,6 +511,17 @@
   width: 370px;
   height: 361px;
   transform: translateY(20px);
+  color: white;
+}
+.userImageBorder{
+  border: 0.852521px solid #0F7FEF;
+  border-radius: 50%;
+}
+.userReview:hover .userImageBorder {
+  border: 0.852521px solid white;
+  border-radius: 50%;
+  box-shadow: 25px 52px 83px rgba(15, 127, 239, 0.25);
+  transition-duration: 300ms;
 }
 
 .userReviewBlack:hover {
@@ -598,6 +609,7 @@
   }
 
   .buyCreditCard {
+
     background: linear-gradient(
       90.42deg,
       rgba(255, 255, 255, 0.5) -1%,
@@ -640,16 +652,15 @@
 }
 
 .buyCreditCard {
-  background: linear-gradient(
-    90.42deg,
-    rgba(255, 255, 255, 0.5) -1%,
-    rgba(255, 255, 255, 0.97) 131.76%
-  );
-  border: 2px solid rgba(255, 255, 255, 0.83);
-  backdrop-filter: blur(13.5px);
-  border-radius: 22px;
-
-
+  box-sizing: border-box;
+    background: linear-gradient(
+      90.42deg,
+      rgba(255, 255, 255, 0.5) -1%,
+      rgba(255, 255, 255, 0.97) 131.76%
+    );
+    border: 2px solid rgba(255, 255, 255, 0.83);
+    backdrop-filter: blur(13.5px);
+    border-radius: 22px;
 }
 
 .buyCreditCardBlack {

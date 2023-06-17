@@ -43,20 +43,20 @@ const BuyRoomGPT = () => {
         >
           {/* ${(user == "white") ? StartingPage.buyCreditCard : StartingPage.buyCreditCardBlack} */}
           {/* grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 */}
-          <div className={`${(user == "white") ? StartingPage.buyCreditCard : StartingPage.buyCreditCardBlack} mb-[24px] lg:mb-0 md:mb-0 py-5 pl-6 pr-8 w-[328px] lg:w-[370px] h-[396px] `}>
-            <div>
+          <div className={`${(user == "white") ? StartingPage.buyCreditCard : StartingPage.buyCreditCardBlack} mb-[24px] lg:mb-0 md:mb-0 py-5 pl-6 pr-8 w-[328px] lg:w-[370px] h-[366px] `}>
+            <div className="lg:mb-[25px]">
               <p
-                style={{ background: "#F1F1F1", borderRadius: "32px" }}
+                style={{ background: `${user == 'white' ? '#F1F1F1' : '#445463'}`, borderRadius: "32px" }}
                 className={`flex justify-center px-2 py-2 text-xl font-bold w-44 ${StartingPage.credit25}`}
               >
                 25 credits
               </p>
             </div>
-            <div className="my-6">
+            <div className="">
               <p className={`${StartingPage.for20}`}>25 room redesigns</p>
-              <p className={`${StartingPage.for20}`}>Every design available</p>
+              <p className={`${StartingPage.for20} lg:mb-[52px]`}>Every design available</p>
             </div>
-            <div className="mb-6">
+            <div className="lg:mb-[16px]">
               <p className={`${StartingPage.usd} text-2xl font-bold`}>
                 <span style={{ color: "#8B8D8E" }}>US</span>$7
               </p>
@@ -73,24 +73,24 @@ const BuyRoomGPT = () => {
             <p
               className={`flex justify-center py-3 ${StartingPage.mostPopular} w-[328px] lg:w-[370px]`}
             >
-              Most Popular
+              <span className="mr-3">M O S T</span> <span>P O P U L A R</span>
             </p>
             <div
-              className={`${StartingPage.buyCreditCardWithDiffBack} py-5 pl-6 pr-8 text-white w-[328px] lg:w-[370px] h-[396px] mb-[24px] lg:mb-0 md:mb-0`}
+              className={`${StartingPage.buyCreditCardWithDiffBack} py-5 pl-6 pr-8 text-white w-[328px] lg:w-[370px] h-[366px] mb-[24px] lg:mb-0 md:mb-0`}
             >
-              <div>
+              <div className="lg:mb-[25px]">
                 <p
-                  style={{ background: "#409FFF", borderRadius: "32px" }}
+                  style={{ background: `${user == 'white' ? '#F1F1F1' : '#445463'}`, borderRadius: "32px" }}
                   className={`flex justify-center px-2 py-2 text-xl font-bold w-44 ${StartingPage.credit25}`}
                 >
                   25 credits
                 </p>
               </div>
-              <div className="my-6">
+              <div className="">
                 <p className={`${StartingPage.for20}`}>25 room redesigns</p>
-                <p className={`${StartingPage.for20}`}>Every design available</p>
+                <p className={`${StartingPage.for20} lg:mb-[52px]`}>Every design available</p>
               </div>
-              <div className="mb-6">
+              <div className="lg:mb-[16px]">
                 <p className={`${StartingPage.usd} text-2xl font-bold`}>
                   <span style={{ color: "#8B8D8E" }}>US</span>$7
                 </p>
@@ -106,20 +106,20 @@ const BuyRoomGPT = () => {
             </div>
           </div>
 
-          <div className={`${(user == "white") ? StartingPage.buyCreditCard : StartingPage.buyCreditCardBlack} py-5 pl-6 pr-8 w-[328px] lg:w-[370px] h-[396px] `}>
-            <div>
+          <div className={`${(user == "white") ? StartingPage.buyCreditCard : StartingPage.buyCreditCardBlack} py-5 pl-6 pr-8 w-[328px] lg:w-[370px] h-[366px] `}>
+            <div className="lg:mb-[25px]">
               <p
-                style={{ background: "#F1F1F1", borderRadius: "32px" }}
+                style={{ background: `${user == 'white' ? '#F1F1F1' : '#445463'}`, borderRadius: "32px" }}
                 className={`flex justify-center px-2 py-2 text-xl font-bold w-44 ${StartingPage.credit25}`}
               >
                 25 credits
               </p>
             </div>
-            <div className="my-6">
+            <div className="">
               <p className={`${StartingPage.for20}`}>25 room redesigns</p>
-              <p className={`${StartingPage.for20}`}>Every design available</p>
+              <p className={`${StartingPage.for20} lg:mb-[52px]`}>Every design available</p>
             </div>
-            <div className="mb-6">
+            <div className="lg:mb-[16px]">
               <p className={`${StartingPage.usd} text-2xl font-bold`}>
                 <span style={{ color: "#8B8D8E" }}>US</span>$7
               </p>
