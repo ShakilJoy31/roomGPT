@@ -30,17 +30,17 @@ const HowItWorks = () => {
         How it{" "}
         <span style={{ color: "#0F7FEF", marginLeft: "10px" }}> Works</span>
       </h1>
-      <div className={`p-2 lg:px-32 md:px-24 ${user == "white"
-                ? StartingPage.workingBackground
-                : StartingPage.workingBackgroundBlack}`}>
-        <div
-          className={`grid lg:items-center lf:flex md:flex `}
-        >
-          <div
-            className={`lg:mr-[38px] flex justify-center items-center`}
-          >
+      <div
+        className={`p-2 lg:px-32 md:px-24 ${
+          user == "white"
+            ? StartingPage.workingBackground
+            : StartingPage.workingBackgroundBlack
+        }`}
+      >
+        <div className={`grid lg:items-center lf:flex md:flex `}>
+          <div className={`lg:mr-[38px] flex justify-center items-center`}>
             <ul>
-            {/* className={`${user == "white"
+              {/* className={`${user == "white"
                 ? StartingPage.workingBackground
                 : StartingPage.workingBackgroundBlack}`} */}
               <div className="flex items-center justify-center gap-x-4">
@@ -54,18 +54,22 @@ const HowItWorks = () => {
                   {uploadImage ? (
                     <img src="https://i.ibb.co/mHFnSB1/Ellipse-9.png" alt="" />
                   ) : (
-                    <img style={{borderRadius: '50%', zIndex: '1'}} src="https://i.ibb.co/g32xxTm/Ellipse-8.png" alt="" />
+                    <img
+                      style={{ borderRadius: "50%", zIndex: "1" }}
+                      src="https://i.ibb.co/g32xxTm/Ellipse-8.png"
+                      alt=""
+                    />
                   )}
                 </div>
 
                 <img
-                  className="hidden lg:block"
+                  className={`hidden lg:block ${StartingPage.lineImage}`}
                   style={{
                     position: "absolute",
                     left: "9.2%",
                     marginTop: "290px",
                     height: "250px",
-                    zIndex: '0'
+                    zIndex: "0",
                   }}
                   src="https://i.ibb.co/0sdRvyD/Line-4.png"
                   alt=""
@@ -78,7 +82,7 @@ const HowItWorks = () => {
                     left: "10.2%",
                     marginTop: "190px",
                     height: "150px",
-                    zIndex: '0'
+                    zIndex: "0",
                   }}
                   src="https://i.ibb.co/0sdRvyD/Line-4.png"
                   alt=""
@@ -110,7 +114,15 @@ const HowItWorks = () => {
                         paddingLeft: "10px",
                         paddingRight: "10px",
                         borderRadius: "50%",
-                        background: ` ${user == 'white' ? (uploadImage ? 'rgba(236, 245, 255, 0.24)' : '#ECF5FF') : (uploadImage ? 'rgba(236, 245, 255, 0.24)' : '#3B5B7A')}`,
+                        background: ` ${
+                          user == "white"
+                            ? uploadImage
+                              ? "rgba(236, 245, 255, 0.24)"
+                              : "#ECF5FF"
+                            : uploadImage
+                            ? "rgba(236, 245, 255, 0.24)"
+                            : "#3B5B7A"
+                        }`,
                       }}
                     >
                       01
@@ -133,8 +145,12 @@ const HowItWorks = () => {
                   {selectTheme ? (
                     <img src="https://i.ibb.co/mHFnSB1/Ellipse-9.png" alt="" />
                   ) : (
-                    <img style={{borderRadius: '50%', zIndex: '1', }} src="https://i.ibb.co/g32xxTm/Ellipse-8.png" alt="" />
-                    // 
+                    <img
+                      style={{ borderRadius: "50%", zIndex: "1" }}
+                      src="https://i.ibb.co/g32xxTm/Ellipse-8.png"
+                      alt=""
+                    />
+                    //
                   )}
                 </div>
                 <li
@@ -163,7 +179,15 @@ const HowItWorks = () => {
                         paddingLeft: "10px",
                         paddingRight: "10px",
                         borderRadius: "50%",
-                        background: ` ${user == 'white' ? (selectTheme ? 'rgba(236, 245, 255, 0.24)' : '#ECF5FF') : (selectTheme ? 'rgba(236, 245, 255, 0.24)' : '#3B5B7A')}`,
+                        background: ` ${
+                          user == "white"
+                            ? selectTheme
+                              ? "rgba(236, 245, 255, 0.24)"
+                              : "#ECF5FF"
+                            : selectTheme
+                            ? "rgba(236, 245, 255, 0.24)"
+                            : "#3B5B7A"
+                        }`,
                       }}
                     >
                       02
@@ -186,7 +210,11 @@ const HowItWorks = () => {
                   {generateResult ? (
                     <img src="https://i.ibb.co/mHFnSB1/Ellipse-9.png" alt="" />
                   ) : (
-                    <img style={{borderRadius: '50%', zIndex: '1'}} src="https://i.ibb.co/g32xxTm/Ellipse-8.png" alt="" />
+                    <img
+                      style={{ borderRadius: "50%", zIndex: "1" }}
+                      src="https://i.ibb.co/g32xxTm/Ellipse-8.png"
+                      alt=""
+                    />
                   )}
                 </div>
 
@@ -216,7 +244,15 @@ const HowItWorks = () => {
                         paddingLeft: "10px",
                         paddingRight: "10px",
                         borderRadius: "50%",
-                        background: ` ${user == 'white' ? (generateResult ? 'rgba(236, 245, 255, 0.24)' : '#ECF5FF') : (generateResult ? 'rgba(236, 245, 255, 0.24)' : '#3B5B7A')}`,
+                        background: ` ${
+                          user == "white"
+                            ? generateResult
+                              ? "rgba(236, 245, 255, 0.24)"
+                              : "#ECF5FF"
+                            : generateResult
+                            ? "rgba(236, 245, 255, 0.24)"
+                            : "#3B5B7A"
+                        }`,
                       }}
                     >
                       03
@@ -259,8 +295,6 @@ const HowItWorks = () => {
               />
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
