@@ -80,7 +80,7 @@ const BuyRoomGPT = () => {
             >
               <div className="lg:mb-[25px]">
                 <p
-                  style={{ background: `${user == 'white' ? '#F1F1F1' : '#445463'}`, borderRadius: "32px" }}
+                  style={{ background: `${user == 'white' ? '#409FFF' : '#445463'}`, borderRadius: "32px" }}
                   className={`flex justify-center px-2 py-2 text-xl font-bold w-44 ${StartingPage.credit25}`}
                 >
                   25 credits
