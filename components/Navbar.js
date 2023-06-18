@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 // import NavbarCss from '../CSSfile/Navbar.module.css';
 import { UserStore } from "../userStore";
+import { FaMoon } from "react-icons/fa";
+import { BsSunFill } from "react-icons/bs";
 
 const Navbar = ({ setTheme, theme }) => {
   const { user, setUser } = UserStore.useContainer();
@@ -53,9 +55,24 @@ const Navbar = ({ setTheme, theme }) => {
                 lineHeight: "142%",
               }}
             >
-              Pricing
+              {
+                router.pathname == '/pricing' ? 'Render' : 'Pricing'
+              }
+              
             </span>
           </button>
+
+          {
+            router.pathname == '/pricing' && <p className='mx-[26px]'>Pricing</p>
+          }
+          {
+            router.pathname == '/pricing' && <div style={{background: "linear-gradient(94.99deg, #E3F1FF 18.95%, rgba(255, 255, 255, 0.97) 127.54%)",
+              backdropFilter: "blur(13.5px)",
+              borderRadius: "7px"}} className='flex items-center p-1'>
+              <p className='mr-2' style={{color: '#0F7FEF'}}>2 credits</p>
+              <img src="https://i.ibb.co/HXv9MgQ/Ellipse-6.png" alt="" />
+            </div>
+          }
 
           <button
             onClick={handleDarkMood}
@@ -72,7 +89,11 @@ const Navbar = ({ setTheme, theme }) => {
                 lineHeight: "142%",
               }}
             >
-              Dark
+              {
+                user == 'white' ? <span><FaMoon></FaMoon></span> : <span><BsSunFill></BsSunFill></span>
+              }
+              
+              
             </span>
           </button>
         </div>
